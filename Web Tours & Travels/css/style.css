@@ -1,0 +1,246 @@
+/* =============== LOADER =============== */
+
+body {
+    background-color: #FFFAFC;
+}
+
+:root {
+    --menu-font: 16px;
+    --border-clr: #E4E9EF;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #FFFAFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #0F0407;
+    border-top: 6px solid #2563EA;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* =============== NAVBAR =============== */
+
+.navbar {
+    background-color: #FFFFFF;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 70px;
+    padding: 20px;
+    z-index: 900;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-clr);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .logo {
+    width: 150px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-list li a {
+    color: #846772;
+    font-size: var(--menu-font);
+    padding: 10px;
+    transition: 0.3s ease-out;
+    border-radius: 10px;
+}
+
+.menu-list li:hover a {
+    background-color: #2563EA;
+    color: #FFFFFF;
+    transition: 0.3s ease-in;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-container .call-btn {
+    font-size: var(--menu-font);
+    background-color: #2563EA;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s ease-out;
+}
+
+.btn-container .call-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #2563EA;
+    color: #2563EA;
+    transition: 0.3s ease-in;
+}
+
+.btn-container .menu-btn {
+    font-size: 34px;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+/* =============== SIDEBAR =============== */
+
+.sidebar-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f0407b1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 990;
+    display: none;
+}
+
+.sidebar {
+    width: 70%;
+    background-color: #FFFAFC;
+    border-right: 1px solid var(--border-clr);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    height: 100vh;
+    display: none;
+}
+
+.sidebar .top {
+    border-bottom: 1px solid var(--border-clr);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .top .logo {
+    width: 150px;
+}
+
+.sidebar .top .close-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: var(--menu-font);
+    padding: 5px;
+    transition: 0.3s ease-out;
+}
+
+.sidebar .top .close-menu:hover {
+    background-color: #E4E9EF;
+    transition: 0.3s ease-in;
+}
+
+.sidebar .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.sidebar .main ul {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar .main ul a {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+    border: 1px solid var(--border-clr);
+}
+
+.sidebar .main ul a:hover {
+    background-color: #0f514e;
+    transition: 0.3s ease-in;
+    color: #FFFFFF;
+}
+
+.sidebar .main ul a li i {
+    margin-inline: 10px;
+}
+
+.sidebar .footer {
+    width: 100%;
+    border-top: 1px solid var(--border-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.sidebar .footer .call-btn {
+    width: 80%;
+    font-size: var(--menu-font);
+    background-color: #2563EA;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s ease-out;
+    margin: 10px;
+    text-align: center;
+}
+
+.sidebar .footer .call-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #2563EA;
+    color: #2563EA;
+    transition: 0.3s ease-in;
+}
