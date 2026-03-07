@@ -14,15 +14,19 @@ window.addEventListener("load", function () {
 // =============== SIDEBAR - DRAWER ===============
 
 function openSidebar() {
-    let sidebarBg = document.getElementById("sidebar-bg");
+    let sidebarBg = document.getElementById("sidebarBg");
+    // sidebarBg.style.display = "block";
+    sidebarBg.style.transform = "translateX(0)";
+
     let sidebar = document.getElementById("sidebar");
-    sidebar.style.display = "block";
-    sidebarBg.style.display = "block";
+    sidebar.style.transform = "translateX(0)";
 }
 
 function closeSidebar() {
-    let sidebarBg = document.getElementById("sidebar-bg");
+    let sidebarBg = document.getElementById("sidebarBg");
+    // sidebarBg.style.display = "none";
+    sidebarBg.style.transform = "translateX(-100%)";
+
     let sidebar = document.getElementById("sidebar");
-    sidebar.style.display = "none";
-    sidebarBg.style.display = "none";
+    sidebar.style.transform = "translateX(-100%)";
 }

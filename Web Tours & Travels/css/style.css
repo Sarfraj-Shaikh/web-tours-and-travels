@@ -124,53 +124,53 @@ body {
 
 /* =============== SIDEBAR =============== */
 
-.sidebar-bg {
-    width: 100vw;
+.sidebarBg {
+    width: 100%;
     height: 100vh;
-    background-color: #0f0407b1;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     position: fixed;
-    top: 0;
-    bottom: 0;
+    inset: 0;
     z-index: 990;
-    display: none;
+    background-color: #0f0407d0;
+    backdrop-filter: blur(5px);
+    /* display: none; */
+    transform: translateX(-100%);
+
 }
 
 .sidebar {
-    width: 70%;
-    background-color: #FFFAFC;
+    width: 85%;
+    height: 100%;
+    background-color: #FFFFFF;
     border-right: 1px solid var(--border-clr);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 999;
-    height: 100vh;
-    display: none;
+    transform: translateX(-100%);
 }
 
 .sidebar .top {
-    border-bottom: 1px solid var(--border-clr);
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--border-clr);
+    overflow: hidden;
 }
 
-.sidebar .top .logo {
-    width: 150px;
+.sidebar .top a .logo {
+    width: 120px;
+    margin: 5px;
 }
 
 .sidebar .top .close-menu {
     width: 50px;
     height: 50px;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 5px;
+    background-color: #FFFFFF;
+    font-size: var(--menu-font);
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    border-radius: 100%;
-    font-size: var(--menu-font);
-    padding: 5px;
     transition: 0.3s ease-out;
 }
 
@@ -180,67 +180,79 @@ body {
 }
 
 .sidebar .main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.sidebar .main::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar .main ul {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
 }
 
-.sidebar .main ul a {
+.sidebar .main ul li {
     width: 100%;
     padding: 10px;
-    font-size: 14px;
-    color: #000000;
-    border-radius: 10px;
-    transition: 0.3s ease-out;
-    border: 1px solid var(--border-clr);
-}
-
-.sidebar .main ul a:hover {
-    background-color: #0f514e;
-    transition: 0.3s ease-in;
-    color: #FFFFFF;
-}
-
-.sidebar .main ul a li i {
-    margin-inline: 10px;
-}
-
-.sidebar .footer {
-    width: 100%;
-    border-top: 1px solid var(--border-clr);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-}
-
-.sidebar .footer .call-btn {
-    width: 80%;
-    font-size: var(--menu-font);
-    background-color: #2563EA;
-    color: #FFFFFF;
-    border-radius: 10px;
-    padding: 10px;
-    border: 2px solid transparent;
-    transition: 0.3s ease-out;
-    margin: 10px;
-    text-align: center;
-}
-
-.sidebar .footer .call-btn:hover {
     background-color: #FFFFFF;
-    border: 2px solid #2563EA;
-    color: #2563EA;
+    border-radius: 10px;
+    color: #000;
+    border: 1px solid var(--border-clr);
+    transition: 0.3s ease-out;
+}
+
+.sidebar .main ul li:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #2b7fff;
     transition: 0.3s ease-in;
+}
+
+.sidebar .main ul li:hover a {
+    color: #155dfc;
+
+}
+
+.sidebar .main ul .active-menu {
+    background-color: #2b7fff;
+    border: 1px solid #FFFFFF;
+}
+
+.sidebar .main ul .active-menu a {
+    color: #FFFFFF;
+}
+
+.sidebar .main ul .call-btn {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #0f514e;
+}
+
+.sidebar .main ul .call-btn a {
+    color: #FFFFFF;
+    font-weight: 400;
+    animation: fade-in-alternate-reverse 1s ease-in-out 0s infinite alternate-reverse none;
+}
+
+@keyframes fade-in-alternate-reverse {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sidebar .main ul li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.sidebar .main ul li a i {
+    margin-inline: 10px;
 }
