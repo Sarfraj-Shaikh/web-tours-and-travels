@@ -42,8 +42,9 @@ body {
 /* =============== NAVBAR =============== */
 
 .navbar {
-    background-color: #FFFFFF;
+    background-color: #ffffffe3;
     width: 100vw;
+    height: 70px;
     position: fixed;
     top: 0;
     right: 0;
@@ -52,8 +53,7 @@ body {
     z-index: 900;
     overflow: hidden;
     border-bottom: 1px solid var(--border-clr);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,7 +194,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .sidebar .main ul li {
@@ -204,7 +204,7 @@ body {
     color: #000;
     border: 1px solid var(--border-clr);
     transition: 0.3s ease-out;
-    min-height: 40px;
+    min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,6 +246,10 @@ body {
     align-items: center;
 }
 
+.sidebar .main ul .call-btn a i {
+    margin-right: 10px;
+}
+
 .sidebar .main ul .call-btn:hover {
     background-color: #07302e;
     transition: 0.3s ease-in;
@@ -272,9 +276,188 @@ body {
     color: #000;
     font-size: 14px;
     width: 100%;
-    min-height: 40px;
+    min-height: 50px;
 }
 
 .sidebar .main ul li a i {
     margin-inline: 10px;
+}
+
+/* =============== HERO SECTION =============== */
+
+.hero {
+    width: 100%;
+    padding: 130px 10px 30px 10px;
+    background-color: #FAFCFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5%;
+}
+
+.hero .mgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #00ffaa3d;
+    color: #009966;
+    padding: 5px 10px;
+    border-radius: 90px;
+    text-align: center;
+}
+
+.hero .mgs span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero .title {
+    margin-top: 30px;
+    color: #04070F;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero .title span {
+    color: #2563EA;
+}
+
+.hero .des {
+    color: #677284;
+    font-size: 18px;
+}
+
+.hero .btns {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.hero .btns .book-btn {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2563EA;
+    color: #FFFFFF;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    border: 1px solid #2563EA;
+    font-weight: 500;
+}
+
+.hero .btns .book-btn i {
+    margin-right: 8px;
+}
+
+.hero .btns .book-btn:hover {
+    border: 1px solid #2563EA;
+    background-color: #FFFFFF;
+    color: #2563EA;
+    transition: 0.3s ease-in;
+}
+
+.hero .btns .services-btn {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #2563EA;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    border: 1px solid #2563EA;
+    font-weight: 500;
+}
+
+.hero .btns .services-btn i {
+    margin-right: 8px;
+}
+
+.hero .btns .services-btn:hover {
+    border: 1px solid #2563EA;
+    background-color: #2563EA;
+    color: #FFFFFF;
+    transition: 0.3s ease-in;
+}
+
+/* =============== QUICK BOOKING SECTION =============== */
+
+.book-box {
+    width: 100%;
+    background-color: #F4F7FB;
+    padding: 5%;
+    border-radius: 10px;
+    border: 3px solid var(--border-clr);
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.book-box .car {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F6F3E4;
+    color: #D08700;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.book-box .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0F0407;
+}
+
+.book-box .desc {
+    font-size: 16px;
+    color: #677284;
+    margin: 5px;
+}
+
+.book-box .btn {
+    margin: 10px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: var(--menu-font);
+    font-weight: 500;
+    background-color: #D08700;
+    color: #F6F3E4;
+    transition: 0.3s ease-out;
+}
+
+.book-box .btn:hover {
+    background-color: #ffa705;
+    color: #000;
+    transition: 0.3s ease-in;
 }
