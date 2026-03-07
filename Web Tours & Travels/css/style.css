@@ -140,9 +140,14 @@ body {
 .sidebar {
     width: 85%;
     height: 100%;
+    overflow: auto;
     background-color: #FFFFFF;
     border-right: 1px solid var(--border-clr);
     transform: translateX(-100%);
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar .top {
@@ -180,12 +185,8 @@ body {
 }
 
 .sidebar .main {
-    overflow: auto;
+    height: 100vh;
     padding: 10px;
-}
-
-.sidebar .main::-webkit-scrollbar {
-    display: none;
 }
 
 .sidebar .main ul {
@@ -198,12 +199,15 @@ body {
 
 .sidebar .main ul li {
     width: 100%;
-    padding: 10px;
     background-color: #FFFFFF;
     border-radius: 10px;
     color: #000;
     border: 1px solid var(--border-clr);
     transition: 0.3s ease-out;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar .main ul li:hover {
@@ -228,6 +232,7 @@ body {
 
 .sidebar .main ul .call-btn {
     margin-top: 10px;
+    margin-bottom: 100px;
     text-align: center;
     background-color: #0f514e;
 }
@@ -236,6 +241,19 @@ body {
     color: #FFFFFF;
     font-weight: 400;
     animation: fade-in-alternate-reverse 1s ease-in-out 0s infinite alternate-reverse none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .main ul .call-btn:hover {
+    background-color: #07302e;
+    transition: 0.3s ease-in;
+    border: 1px solid transparent;
+}
+
+.sidebar .main ul .call-btn:hover a {
+    color: #FFFFFF;
 }
 
 @keyframes fade-in-alternate-reverse {
@@ -249,8 +267,12 @@ body {
 }
 
 .sidebar .main ul li a {
+    display: flex;
+    align-items: center;
     color: #000;
     font-size: 14px;
+    width: 100%;
+    min-height: 40px;
 }
 
 .sidebar .main ul li a i {
