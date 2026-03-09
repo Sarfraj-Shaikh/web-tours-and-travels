@@ -71,6 +71,370 @@
         width: 60%;
         padding: 10px;
     }
+
+    /* =============== POPULAR DESTINATION SECTION =============== */
+
+    .pop-des {
+        width: 100%;
+    }
+
+    .pop-des .pop-con {
+        width: 90%;
+    }
+
+    .pop-des .pop-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .pop-con .msg h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .pop-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .pop-con .msg .divider {
+        background-color: #677288;
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+        border-radius: 90px;
+    }
+
+    .pop-con .card-con {
+        width: 100%;
+        padding: 3% 3% 5% 3%;
+    }
+
+    .card-con .card {
+        width: 300px;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    /* =============== WHY CHOOSE US SECTION =============== */
+
+    .why-ch {
+        width: 100%;
+    }
+
+    .why-ch .why-con {
+        width: 90%;
+    }
+
+    .why-ch .why-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .why-con .msg h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .why-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .why-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+        border-radius: 90px;
+    }
+
+    .why-con .card-con {
+        width: 100%;
+        padding: 3% 3% 5% 3%;
+    }
+
+    .why-con .card-con .card {
+        width: 300px;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    /* =============== OUR SERVICES SECTION =============== */
+
+    .our-ser {
+        width: 100%;
+    }
+
+    .our-ser .ser-con {
+        width: 90%;
+    }
+
+    .our-ser .ser-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .ser-con .msg h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .ser-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .ser-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .ser-con .card-con {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .ser-con .card-con .card {
+        width: 100%;
+        padding: 2%;
+        margin: 10px;
+    }
+
+    .ser-con .card-con .card .info-box {
+        width: 100%;
+        margin: 8px;
+        gap: 5px;
+    }
+
+    .ser-con .services-btn {
+        width: 50%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* =============== FEEDBACK/REVIEW SECTION =============== */
+
+    .feed-bg {
+        width: 100%;
+    }
+
+    .feed-bg .feed-con {
+        width: 90%;
+    }
+
+    .feed-bg .feed-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .feed-con .msg h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .feed-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .feed-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .feed-con .card-con {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .feed-con .card-con .swiper {
+        width: 100%;
+        height: fit-content;
+        padding: 2%;
+    }
+
+    .feed-con .card-con .card {
+        width: 100%;
+        gap: 15px;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .feed-con .card-con .card .star {
+        font-size: 14px;
+    }
+
+    .feed-con .card-con .card .message {
+        margin: 20px 5px;
+        font-size: 18px;
+    }
+
+    .feed-con .card-con .card .user-con {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .feed-con .card-con .card .user-info .dp {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .feed-con .card-con .card .user-info .info .name {
+        font-size: 16px;
+    }
+
+    .feed-con .card-con .card .user-info .info .u-city {
+        font-size: 14px;
+    }
+
+    .feed-con .view-btn {
+        width: 60%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* =============== EMERGENCY SECTION =============== */
+
+    .emer-bg {
+        width: 100%;
+    }
+
+    .emer-bg .emer-con {
+        width: 90%;
+    }
+
+    .emer-bg .emer-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .emer-con .msg h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .emer-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .emer-bg .emer-con .btns {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .emer-con .btns .call-btn {
+        width: 170px;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .call-btn i {
+        margin-right: 10px;
+    }
+
+    .emer-con .btns .wa-btn {
+        width: 170px;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .wa-btn i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    .emer-con .btns .book-btn {
+        width: 170px;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .book-btn i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    /* =============== FOOTER SECTION =============== */
+
+    .footer-bg {
+        width: 100%;
+    }
+
+    .footer-bg .footer-con {
+        width: 90%;
+        gap: 40px;
+        padding: 3%;
+    }
+
+    .footer-con .company {
+        max-width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #E4E9EF;
+    }
+
+    .footer-con .company .logo {
+        width: 150px;
+    }
+
+    .footer-con .company p {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .footer-con .links {
+        gap: 150px;
+    }
+
+    .footer-con .links .quick-link h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .links .quick-link a {
+        font-size: 14px;
+    }
+
+    .footer-con .links .policies-link h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .links .policies-link a {
+        font-size: 14px;
+    }
+
+    .footer-con .contact h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .contact a {
+        font-size: 14px;
+    }
+
+    .footer-bg .credit-con {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 3% 10%;
+    }
+
+    .footer-bg .credit-con .company {
+        font-size: 14px;
+    }
+
+    .footer-bg .credit-con .dev {
+        font-size: 15px;
+        margin: 10px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -148,6 +512,371 @@
         margin: 15px;
         width: 60%;
         padding: 10px;
+    }
+
+    /* =============== POPULAR DESTINATION SECTION =============== */
+
+    .pop-des {
+        width: 100%;
+    }
+
+    .pop-des .pop-con {
+        width: 100%;
+    }
+
+    .pop-des .pop-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .pop-con .msg h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .pop-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .pop-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+        border-radius: 90px;
+    }
+
+    .pop-con .card-con {
+        width: 100%;
+        padding: 3% 3% 5% 3%;
+    }
+
+    .card-con .card {
+        width: 45%;
+        height: 200px;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    /* =============== WHY CHOOSE US SECTION =============== */
+
+    .why-ch {
+        width: 100%;
+    }
+
+    .why-ch .why-con {
+        width: 95%;
+    }
+
+    .why-ch .why-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .why-con .msg h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .why-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .why-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .why-con .card-con {
+        width: 100%;
+        padding: 3% 3% 5% 3%;
+    }
+
+    .why-con .card-con .card {
+        width: 90%;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    /* =============== OUR SERVICES SECTION =============== */
+
+    .our-ser {
+        width: 100%;
+    }
+
+    .our-ser .ser-con {
+        width: 100%;
+    }
+
+    .our-ser .ser-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .ser-con .msg h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .ser-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .ser-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .ser-con .card-con {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .ser-con .card-con .card {
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .ser-con .card-con .card .info-box {
+        width: 100%;
+        margin: 5px;
+        gap: 5px;
+    }
+
+    .ser-con .services-btn {
+        width: 60%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* =============== FEEDBACK/REVIEW SECTION =============== */
+
+    .feed-bg {
+        width: 100%;
+    }
+
+    .feed-bg .feed-con {
+        width: 100%;
+    }
+
+    .feed-bg .feed-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .feed-con .msg h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .feed-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .feed-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .feed-con .card-con {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .feed-con .card-con .swiper {
+        width: 100%;
+        height: fit-content;
+        padding: 2%;
+    }
+
+    .feed-con .card-con .card {
+        width: 100%;
+        gap: 15px;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .feed-con .card-con .card .star {
+        font-size: 12px;
+    }
+
+    .feed-con .card-con .card .message {
+        margin: 20px 5px;
+        font-size: 16px;
+    }
+
+    .feed-con .card-con .card .user-con {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .feed-con .card-con .card .user-info .dp {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .feed-con .card-con .card .user-info .info .name {
+        font-size: 14px;
+    }
+
+    .feed-con .card-con .card .user-info .info .u-city {
+        font-size: 12px;
+    }
+
+    .feed-con .view-btn {
+        width: 60%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* =============== EMERGENCY SECTION =============== */
+
+    .emer-bg {
+        width: 100%;
+    }
+
+    .emer-bg .emer-con {
+        width: 100%;
+    }
+
+    .emer-bg .emer-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .emer-con .msg h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .emer-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .emer-bg .emer-con .btns {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .emer-con .btns .call-btn {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .call-btn i {
+        margin-right: 10px;
+    }
+
+    .emer-con .btns .wa-btn {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .wa-btn i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    .emer-con .btns .book-btn {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .book-btn i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    /* =============== FOOTER SECTION =============== */
+
+    .footer-bg {
+        width: 100%;
+    }
+
+    .footer-bg .footer-con {
+        width: 90%;
+        gap: 50px;
+        padding: 3%;
+    }
+
+    .footer-con .company {
+        max-width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #E4E9EF;
+    }
+
+    .footer-con .company .logo {
+        width: 150px;
+    }
+
+    .footer-con .company p {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .footer-con .links {
+        gap: 150px;
+    }
+
+    .footer-con .links .quick-link h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .links .quick-link a {
+        font-size: 14px;
+    }
+
+    .footer-con .links .policies-link h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .links .policies-link a {
+        font-size: 14px;
+    }
+
+    .footer-con .contact h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .contact a {
+        font-size: 14px;
+    }
+
+    .footer-bg .credit-con {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 3% 10%;
+    }
+
+    .footer-bg .credit-con .company {
+        font-size: 14px;
+    }
+
+    .footer-bg .credit-con .dev {
+        font-size: 15px;
+        margin: 10px;
     }
 }
 
@@ -229,5 +958,379 @@
         margin: 15px;
         width: 90%;
         padding: 10px;
+    }
+
+    /* =============== POPULAR DESTINATION SECTION =============== */
+
+    .pop-des {
+        width: 100%;
+    }
+
+    .pop-des .pop-con {
+        width: 100%;
+    }
+
+    .pop-des .pop-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .pop-con .msg h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .pop-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .pop-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+        border-radius: 90px;
+    }
+
+    .pop-con .card-con {
+        width: 100%;
+        padding: 3% 3% 5% 3%;
+    }
+
+    .card-con .card {
+        width: 100%;
+        height: 200px;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    /* =============== WHY CHOOSE US SECTION =============== */
+
+    .why-ch {
+        width: 100%;
+    }
+
+    .why-ch .why-con {
+        width: 100%;
+    }
+
+    .why-ch .why-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .why-con .msg h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .why-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .why-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .why-con .card-con {
+        width: 100%;
+        padding: 3% 3% 5% 3%;
+    }
+
+    .why-con .card-con .card {
+        width: 90%;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    /* =============== OUR SERVICES SECTION =============== */
+
+    .our-ser {
+        width: 100%;
+    }
+
+    .our-ser .ser-con {
+        width: 100%;
+    }
+
+    .our-ser .ser-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .ser-con .msg h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .ser-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .ser-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .ser-con .card-con {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .ser-con .card-con .card {
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .ser-con .card-con .card .info-box {
+        width: 100%;
+        margin: 5px;
+        gap: 5px;
+    }
+
+    .ser-con .services-btn {
+        width: 60%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* =============== FEEDBACK/REVIEW SECTION =============== */
+
+    .feed-bg {
+        width: 100%;
+    }
+
+    .feed-bg .feed-con {
+        width: 100%;
+    }
+
+    .feed-bg .feed-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .feed-con .msg h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .feed-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .feed-con .msg .divider {
+        width: 50px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .feed-con .card-con {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .feed-con .card-con .swiper {
+        width: 100%;
+        height: fit-content;
+        padding: 2%;
+    }
+
+    .feed-con .card-con .card {
+        width: 100%;
+        height: fit-content;
+        gap: 15px;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .feed-con .card-con .card .star {
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .feed-con .card-con .card .message {
+        margin: 30px 10px;
+        font-size: 16px;
+    }
+
+    .feed-con .card-con .card .user-con {
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .feed-con .card-con .card .user-info {
+        justify-content: start;
+    }
+
+    .feed-con .card-con .card .user-info .dp {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .feed-con .card-con .card .user-info .info .name {
+        font-size: 14px;
+    }
+
+    .feed-con .card-con .card .user-info .info .u-city {
+        font-size: 12px;
+    }
+
+    .feed-con .view-btn {
+        width: 60%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* =============== EMERGENCY SECTION =============== */
+
+    .emer-bg {
+        width: 100%;
+    }
+
+    .emer-bg .emer-con {
+        width: 90%;
+    }
+
+    .emer-bg .emer-con .msg {
+        width: 100%;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .emer-con .msg h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .emer-con .msg p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .emer-bg .emer-con .btns {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .emer-con .btns .call-btn {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .call-btn i {
+        margin-right: 10px;
+    }
+
+    .emer-con .btns .wa-btn {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .wa-btn i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    .emer-con .btns .book-btn {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .emer-con .btns .book-btn i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    /* =============== FOOTER SECTION =============== */
+
+    .footer-bg {
+        width: 100%;
+    }
+
+    .footer-bg .footer-con {
+        width: 100%;
+        gap: 30px;
+        padding: 5%;
+    }
+
+    .footer-con .company {
+        max-width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #E4E9EF;
+    }
+
+    .footer-con .company .logo {
+        width: 150px;
+    }
+
+    .footer-con .company p {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .footer-con .links {
+        gap: 100px;
+    }
+
+    .footer-con .links .quick-link h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .links .quick-link a {
+        font-size: 14px;
+    }
+
+    .footer-con .links .policies-link h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .links .policies-link a {
+        font-size: 14px;
+    }
+
+    .footer-con .contact h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .contact a {
+        font-size: 14px;
+    }
+
+    .footer-bg .credit-con {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 3% 10%;
+    }
+
+    .footer-bg .credit-con .company {
+        font-size: 14px;
+    }
+
+    .footer-bg .credit-con .dev {
+        font-size: 15px;
+        margin: 10px;
     }
 }

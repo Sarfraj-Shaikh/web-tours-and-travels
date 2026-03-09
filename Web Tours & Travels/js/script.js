@@ -30,3 +30,12 @@ function closeSidebar() {
     let sidebar = document.getElementById("sidebar");
     sidebar.style.transform = "translateX(-100%)";
 }
+
+// =============== FOOTER SECTION ===============
+
+const d = new Date();
+let year = d.getFullYear();
+let company = "Web Tours and Travels";
+let companyCredit = document.getElementById("com-credit-txt");
+
+companyCredit.innerHTML = `${year} ${company}. All rights reserved.`;
