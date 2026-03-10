@@ -1,0 +1,689 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #FAFCFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #A7BAE1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%;
+}
+
+.mainbar .content form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 2px solid #E4E9EF;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 20px;
+    padding: 3%;
+}
+
+.mainbar .content form .input-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mainbar .content form .input-box {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.mainbar .content form .input-box .trip-con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F0F2F5;
+    border-radius: 10px;
+}
+
+.mainbar .content form .input-box .trip-con p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #4a4a4b;
+    padding: 10px;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.mainbar .content form .input-box .trip-con p.active {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2563EA;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.mainbar .content form .input-box .driver-con {
+    width: 100%;
+    background-color: #F0F2F5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+.mainbar .content form .input-box .driver-con .tickbox {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.mainbar .content form .input-box .driver-con p {
+    font-size: 14px;
+    color: #4a4a4b;
+    margin-inline: 10px;
+}
+
+.mainbar .content form .input-box label {
+    margin: 10px 10px 10px 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mainbar .content form .input-box label sup {
+    margin-inline: 5px;
+    color: #ff0000;
+}
+
+.mainbar .content form .input-box input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #F9FAFB;
+    color: #000000;
+    border-radius: 10px;
+    border: 2px solid #A7ADB8;
+    padding-inline: 10px;
+}
+
+.mainbar .content form .input-box input:focus {
+    outline: 2px solid #2563EA;
+    border: none;
+}
+
+.mainbar .content form .input-box input::placeholder {
+    color: #4a4a4b;
+}
+
+.mainbar .content form .price-bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F2F5;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.mainbar .content form .price-bg .left {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mainbar .content form .price-bg .left .title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mainbar .content form .price-bg .left .desc {
+    color: #4a4a4b;
+    font-size: 14px;
+}
+
+.mainbar .content form .price-bg .left input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 10px 10px 0px;
+    padding-inline: 10px;
+    background-color: #F9FAFB;
+    color: #000000;
+    border-radius: 10px;
+    border: 2px solid #A7ADB8;
+}
+
+.mainbar .content form .price-bg .left input::placeholder {
+    color: #4a4a4b;
+}
+
+.mainbar .content form .price-bg .left input:focus {
+    outline: 2px solid #2563EA;
+    border: none;
+}
+
+.mainbar .content form .price-bg .right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mainbar .content form .price-bg .right .title {
+    color: #4a4a4b;
+    font-size: 14px;
+}
+
+.mainbar .content form .price-bg .right .amt {
+    color: #2563EA;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mainbar .content form button {
+    width: 100%;
+    padding: 13px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #2563EA;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content form button:hover {
+    background-color: #13347a;
+    transition: 0.3s ease-in;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .mainbar .content form {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .mainbar .content form .input-flex {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .mainbar .content form .input-box {
+        width: 100%;
+    }
+
+    .mainbar .content form .input-box .trip-con {
+        width: 100%;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .mainbar .content form .input-box .trip-con p {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .trip-con p.active {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .driver-con {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content form .input-box .driver-con .tickbox {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .driver-con p {
+        font-size: 14px;
+        margin-inline: 10px;
+    }
+
+    .mainbar .content form .input-box label {
+        margin: 10px 10px 10px 0px;
+        font-size: 14px;
+    }
+
+    .mainbar .content form .input-box label sup {
+        margin-inline: 5px;
+    }
+
+    .mainbar .content form .input-box input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+        padding-inline: 10px;
+    }
+
+    .mainbar .content form .price-bg {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .mainbar .content form .price-bg .left {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content form .price-bg .left .title {
+        font-size: 16px;
+    }
+
+    .mainbar .content form .price-bg .left .desc {
+        font-size: 14px;
+    }
+
+    .mainbar .content form .price-bg .left input {
+        width: 100%;
+        height: 40px;
+        margin: 10px 10px 10px 0px;
+        padding-inline: 10px;
+    }
+
+    .mainbar .content form .price-bg .right {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content form .price-bg .right .title {
+        font-size: 14px;
+    }
+
+    .mainbar .content form .price-bg .right .amt {
+        font-size: 24px;
+    }
+
+    .mainbar .content form button {
+        width: 100%;
+        padding: 13px 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .content form {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .mainbar .content form .input-flex {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .mainbar .content form .input-box {
+        width: 100%;
+    }
+
+    .mainbar .content form .input-box .trip-con {
+        width: 100%;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .mainbar .content form .input-box .trip-con p {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .trip-con p.active {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .driver-con {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content form .input-box .driver-con .tickbox {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .driver-con p {
+        font-size: 14px;
+        margin-inline: 10px;
+    }
+
+    .mainbar .content form .input-box label {
+        margin: 10px 10px 10px 0px;
+        font-size: 14px;
+    }
+
+    .mainbar .content form .input-box label sup {
+        margin-inline: 5px;
+    }
+
+    .mainbar .content form .input-box input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+        padding-inline: 10px;
+    }
+
+    .mainbar .content form .price-bg {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .mainbar .content form .price-bg .left {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content form .price-bg .left .title {
+        font-size: 16px;
+    }
+
+    .mainbar .content form .price-bg .left .desc {
+        font-size: 14px;
+    }
+
+    .mainbar .content form .price-bg .left input {
+        width: 100%;
+        height: 40px;
+        margin: 10px 10px 10px 0px;
+        padding-inline: 10px;
+    }
+
+    .mainbar .content form .price-bg .right {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content form .price-bg .right .title {
+        font-size: 14px;
+    }
+
+    .mainbar .content form .price-bg .right .amt {
+        font-size: 24px;
+    }
+
+    .mainbar .content form button {
+        width: 100%;
+        padding: 13px 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 28px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 8% 3%;
+    }
+
+    .mainbar .content form {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .mainbar .content form .input-flex {
+        width: 100%;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .mainbar .content form .input-box {
+        width: 100%;
+    }
+
+    .mainbar .content form .input-box .trip-con {
+        width: 100%;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .mainbar .content form .input-box .trip-con p {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .trip-con p.active {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .driver-con {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content form .input-box .driver-con .tickbox {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .mainbar .content form .input-box .driver-con p {
+        font-size: 14px;
+        margin-inline: 10px;
+    }
+
+    .mainbar .content form .input-box label {
+        margin: 10px 10px 10px 0px;
+        font-size: 14px;
+    }
+
+    .mainbar .content form .input-box label sup {
+        margin-inline: 5px;
+    }
+
+    .mainbar .content form .input-box input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+        padding-inline: 10px;
+    }
+
+    .mainbar .content form .price-bg {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .mainbar .content form .price-bg .left {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content form .price-bg .left .title {
+        font-size: 16px;
+    }
+
+    .mainbar .content form .price-bg .left .desc {
+        font-size: 14px;
+    }
+
+    .mainbar .content form .price-bg .left input {
+        width: 100%;
+        height: 40px;
+        margin: 10px 10px 10px 0px;
+        padding-inline: 10px;
+    }
+
+    .mainbar .content form .price-bg .right {
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content form .price-bg .right .title {
+        font-size: 14px;
+    }
+
+    .mainbar .content form .price-bg .right .amt {
+        font-size: 24px;
+    }
+
+    .mainbar .content form button {
+        width: 100%;
+        padding: 12px 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+}

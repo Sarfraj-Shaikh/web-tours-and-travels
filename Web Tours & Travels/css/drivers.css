@@ -1,0 +1,477 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #FAFCFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #A7BAE1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+
+.mainbar .content .card {
+    width: 400px;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border: 2px solid #E4E9EF;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+    overflow: hidden;
+}
+
+.mainbar .content .card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 14px;
+    transition: 0.3s ease-in;
+}
+
+.mainbar .content .card .top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 10px;
+}
+
+.mainbar .content .card .top-bar img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.mainbar .content .card .top-bar .fleet-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+}
+
+
+.mainbar .content .card .top-bar .fleet-info .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mainbar .content .card .top-bar .fleet-info .stars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #13347A;
+}
+
+.mainbar .content .card .chips-bg {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 10px 10px 10px;
+}
+
+.mainbar .content .card .chips-bg .chips {
+    margin: 5px;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7EEF9;
+    color: #0F1C2E;
+    font-size: 12px;
+    border-radius: 90px;
+}
+
+.mainbar .content .card .chips-bg .chips.active {
+    background-color: #BEFDEB;
+    color: #009966;
+    font-weight: 600;
+    width: 90%;
+    padding: 10px;
+}
+
+.mainbar .content .card .chips-bg .chips.inactive {
+    background-color: #FDECEC;
+    color: #EF4343;
+    font-weight: 600;
+    width: 90%;
+    padding: 10px;
+}
+
+.mainbar .content .card .chips-bg .chips i {
+    margin-inline: 5px;
+}
+
+.mainbar .content .card .chips-bg .chips p {
+    margin-right: 10px;
+}
+
+.mainbar .content .card .hire-btn {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbar .content .card .hire-btn .cta-btn {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 10px 10px 10px;
+    background-color: #0644c9;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .card .hire-btn .cta-btn:hover {
+    background-color: #13347A;
+    transition: 0.3s ease-in;
+}
+
+.mainbar .content .card .hire-btn .cta-btn.ban {
+    background-color: #F0F2F5;
+    color: #858585;
+    cursor: not-allowed;
+}
+
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 10px;
+        padding: 3%;
+    }
+
+    .mainbar .content .card {
+        width: 330px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .top-bar {
+        margin: 10px;
+    }
+
+    .mainbar .content .card .top-bar img {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .top-bar .fleet-info {
+        padding: 10px;
+    }
+
+
+    .mainbar .content .card .top-bar .fleet-info .title {
+        font-size: 18px;
+    }
+
+    .mainbar .content .card .top-bar .fleet-info .stars {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .mainbar .content .card .chips-bg {
+        margin: 0px 10px 10px 10px;
+        justify-content: start;
+    }
+
+    .mainbar .content .card .chips-bg .chips {
+        margin: 5px;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .mainbar .content .card .chips-bg .chips.active {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .chips-bg .chips.inactive {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .chips-bg .chips i {
+        margin-inline: 5px;
+    }
+
+    .mainbar .content .card .chips-bg .chips p {
+        margin-right: 10px;
+    }
+
+    .mainbar .content .card .hire-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .hire-btn .cta-btn {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 10px 10px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 10px;
+        padding: 3%;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .top-bar {
+        width: 100%;
+        margin: 10px;
+        justify-content: start;
+    }
+
+    .mainbar .content .card .top-bar img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .top-bar .fleet-info {
+        padding: 10px;
+    }
+
+
+    .mainbar .content .card .top-bar .fleet-info .title {
+        font-size: 18px;
+    }
+
+    .mainbar .content .card .top-bar .fleet-info .stars {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .mainbar .content .card .chips-bg {
+        margin: 0px 10px 10px 10px;
+        justify-content: start;
+    }
+
+    .mainbar .content .card .chips-bg .chips {
+        margin: 5px;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .mainbar .content .card .chips-bg .chips.active {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .chips-bg .chips.inactive {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .chips-bg .chips i {
+        margin-inline: 5px;
+    }
+
+    .mainbar .content .card .chips-bg .chips p {
+        margin-right: 10px;
+    }
+
+    .mainbar .content .card .hire-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .hire-btn .cta-btn {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 10px 10px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 28px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 10px;
+        padding: 3%;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .mainbar .content .card .top-bar {
+        width: 100%;
+        margin: 10px;
+        justify-content: start;
+    }
+
+    .mainbar .content .card .top-bar img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .top-bar .fleet-info {
+        padding: 10px;
+    }
+
+
+    .mainbar .content .card .top-bar .fleet-info .title {
+        font-size: 18px;
+    }
+
+    .mainbar .content .card .top-bar .fleet-info .stars {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .mainbar .content .card .chips-bg {
+        margin: 0px 10px 10px 10px;
+        justify-content: start;
+    }
+
+    .mainbar .content .card .chips-bg .chips {
+        margin: 5px;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .mainbar .content .card .chips-bg .chips.active {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .chips-bg .chips.inactive {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .chips-bg .chips i {
+        margin-inline: 5px;
+    }
+
+    .mainbar .content .card .chips-bg .chips p {
+        margin-right: 10px;
+    }
+
+    .mainbar .content .card .hire-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .card .hire-btn .cta-btn {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 10px 10px 10px;
+        font-size: 14px;
+    }
+}

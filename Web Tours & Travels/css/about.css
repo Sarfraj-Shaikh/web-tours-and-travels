@@ -1,0 +1,596 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #FAFCFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #A7BAE1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+
+.mainbar .content .story {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mainbar .content .story h3 {
+    font-size: 34px;
+}
+
+.mainbar .content .story .divider-line {
+    width: 80px;
+    height: 5px;
+    background-color: #677288;
+    margin: 10px 10px 20px 0px;
+    border-radius: 90px;
+}
+
+.mainbar .content .story p {
+    font-size: 16px;
+    color: #353535;
+    text-align: left;
+    padding: 8px;
+}
+
+.mainbar .content .stats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+}
+
+.content .stats .stats-card {
+    width: 300px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border: 2px solid #E4E9EF;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px -1px, rgba(0, 0, 0, 0.03) 0px 2px 4px -1px;
+}
+
+.content .stats .stats-card .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #E1EDFD;
+    color: #13347a;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.content .stats .stats-card .title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+    color: #13347a;
+}
+
+.content .stats .stats-card .descr {
+    color: #677288;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* =============== CORE VALUE SECTION =============== */
+
+.core-bg {
+    background-color: #F0F2F5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.core-bg .headbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.core-bg .headbar h3 {
+    font-size: 36px;
+}
+
+.core-bg .headbar p {
+    font-size: 16px;
+    color: #677288;
+}
+
+.core-bg .headbar .divider-line {
+    width: 80px;
+    height: 5px;
+    background-color: #677288;
+    margin: 10px;
+    border-radius: 90px;
+}
+
+.core-bg .content {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 3%;
+}
+
+.core-bg .content .stats-card {
+    width: 350px;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border: 2px solid #E4E9EF;
+    padding: 3%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px -1px, rgba(0, 0, 0, 0.03) 0px 2px 4px -1px;
+}
+
+.core-bg .content .stats-card .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #E1EDFD;
+    color: #13347a;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.core-bg .content .stats-card .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px;
+    color: #13347a;
+}
+
+.core-bg .content .stats-card .descr {
+    color: #677288;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 20px;
+        padding: 3%;
+    }
+
+    .mainbar .content .story {
+        width: 100%;
+    }
+
+    .mainbar .content .story h3 {
+        font-size: 34px;
+    }
+
+    .mainbar .content .story .divider-line {
+        width: 50px;
+        height: 5px;
+        margin: 10px 10px 20px 0px;
+        border-radius: 90px;
+    }
+
+    .mainbar .content .story p {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .mainbar .content .stats {
+        width: 100%;
+        margin: 30px 10px;
+    }
+
+    .content .stats .stats-card {
+        width: 320px;
+        height: 200px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .content .stats .stats-card .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .content .stats .stats-card .title {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .content .stats .stats-card .descr {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* =============== CORE VALUE SECTION =============== */
+
+    .core-bg {
+        width: 100%;
+    }
+
+    .core-bg .headbar {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .core-bg .headbar h3 {
+        font-size: 36px;
+    }
+
+    .core-bg .headbar p {
+        font-size: 16px;
+    }
+
+    .core-bg .headbar .divider-line {
+        width: 50px;
+        height: 5px;
+        margin: 10px;
+    }
+
+    .core-bg .content {
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .core-bg .content .stats-card {
+        width: 100%;
+        height: fit-content;
+        padding: 5%;
+        margin: 10px;
+    }
+
+    .core-bg .content .stats-card .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .core-bg .content .stats-card .title {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .core-bg .content .stats-card .descr {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 3%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 20px;
+        padding: 3%;
+    }
+
+    .mainbar .content .story {
+        width: 100%;
+    }
+
+    .mainbar .content .story h3 {
+        font-size: 30px;
+    }
+
+    .mainbar .content .story .divider-line {
+        width: 50px;
+        height: 5px;
+        margin: 10px 10px 20px 0px;
+        border-radius: 90px;
+    }
+
+    .mainbar .content .story p {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .mainbar .content .stats {
+        width: 100%;
+        margin: 20px 10px;
+    }
+
+    .content .stats .stats-card {
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .content .stats .stats-card .logo {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .content .stats .stats-card .title {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .content .stats .stats-card .descr {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* =============== CORE VALUE SECTION =============== */
+
+    .core-bg {
+        width: 100%;
+    }
+
+    .core-bg .headbar {
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .core-bg .headbar h3 {
+        font-size: 30px;
+    }
+
+    .core-bg .headbar p {
+        font-size: 16px;
+    }
+
+    .core-bg .headbar .divider-line {
+        width: 50px;
+        height: 5px;
+        margin: 10px;
+    }
+
+    .core-bg .content {
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .core-bg .content .stats-card {
+        width: 100%;
+        height: fit-content;
+        padding: 5%;
+        margin: 10px;
+    }
+
+    .core-bg .content .stats-card .logo {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .core-bg .content .stats-card .title {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .core-bg .content .stats-card .descr {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 3%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 28px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 20px;
+        padding: 3%;
+    }
+
+    .mainbar .content .story {
+        width: 100%;
+    }
+
+    .mainbar .content .story h3 {
+        font-size: 28px;
+    }
+
+    .mainbar .content .story .divider-line {
+        width: 50px;
+        height: 5px;
+        margin: 10px 10px 20px 0px;
+        border-radius: 90px;
+    }
+
+    .mainbar .content .story p {
+        font-size: 16px;
+        padding: 3px;
+    }
+
+    .mainbar .content .stats {
+        width: 100%;
+        margin: 20px 5px;
+    }
+
+    .content .stats .stats-card {
+        width: 100%;
+        height: fit-content;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .content .stats .stats-card .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .content .stats .stats-card .title {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .content .stats .stats-card .descr {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* =============== CORE VALUE SECTION =============== */
+
+    .core-bg {
+        width: 100%;
+    }
+
+    .core-bg .headbar {
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .core-bg .headbar h3 {
+        font-size: 28px;
+    }
+
+    .core-bg .headbar p {
+        font-size: 16px;
+    }
+
+    .core-bg .headbar .divider-line {
+        width: 50px;
+        height: 5px;
+        margin: 10px;
+    }
+
+    .core-bg .content {
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .core-bg .content .stats-card {
+        width: 100%;
+        height: fit-content;
+        padding: 3%;
+        margin: 5px;
+    }
+
+    .core-bg .content .stats-card .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .core-bg .content .stats-card .title {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .core-bg .content .stats-card .descr {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}

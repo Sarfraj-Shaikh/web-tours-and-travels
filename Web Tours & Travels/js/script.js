@@ -20,15 +20,19 @@ function openSidebar() {
 
     let sidebar = document.getElementById("sidebar");
     sidebar.style.transform = "translateX(0)";
+    sidebar.style.transition = "transform 0.3s ease-in";
 }
 
 function closeSidebar() {
+    let sidebar = document.getElementById("sidebar");
+    sidebar.style.transform = "translateX(-100%)";
+    sidebar.style.transition = "transform 0.3s ease-in";
+
     let sidebarBg = document.getElementById("sidebarBg");
     // sidebarBg.style.display = "none";
     sidebarBg.style.transform = "translateX(-100%)";
 
-    let sidebar = document.getElementById("sidebar");
-    sidebar.style.transform = "translateX(-100%)";
+
 }
 
 // =============== FOOTER SECTION ===============

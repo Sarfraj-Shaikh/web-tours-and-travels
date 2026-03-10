@@ -137,6 +137,7 @@ project-root
 ├── tutorials.html
 ├── faq.html
 ├── contact.html
+├── feedbacks.html
 │
 ├── policies/
 │   ├── travel-rates.html
@@ -148,12 +149,13 @@ project-root
 │   └── disclaimer.html
 │
 ├── css/
-│   └── style.css
+│   ├── style.css
+│   ├── common.css
+│   ├── responsive.css
 │
 ├── js/
 │   └── script.js
 │
-└── images/
 ```
 
 ---

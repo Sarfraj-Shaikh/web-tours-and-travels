@@ -1,0 +1,365 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #FAFCFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #A7BAE1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+
+.mainbar .content .card {
+    width: 400px;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border: 2px solid #E4E9EF;
+    padding: 1%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 14px;
+    transition: 0.3s ease-in;
+}
+
+.mainbar .content .card .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #E1EDFD;
+    color: #0051ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.mainbar .content .card .ser-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.mainbar .content .card .ser-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.mainbar .content .card .ser-info p {
+    font-size: 14px;
+    color: #647287;
+    margin-bottom: 5px;
+}
+
+.mainbar .content .card .ser-info ul {
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.mainbar .content .card .ser-info li {
+    list-style: disc;
+    font-size: 14px;
+    color: #647287;
+}
+
+.mainbar .content .card .ser-info li::marker {
+    color: #0051ff;
+}
+
+.mainbar .content .card .book-btn {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 5%;
+    border-top: 1px solid #6472877c;
+}
+
+.mainbar .content .card .book-btn .cta-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #0051ff;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .card .book-btn .cta-btn:hover {
+    background-color: #002880;
+    transition: 0.3s ease-in;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 10px;
+        padding: 3%;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        padding: 1%;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .ser-info {
+        padding: 5px;
+    }
+
+    .mainbar .content .card .ser-info h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .mainbar .content .card .ser-info p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .mainbar .content .card .ser-info ul {
+        padding-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .mainbar .content .card .ser-info li {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .book-btn {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .mainbar .content .card .book-btn .cta-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 10px;
+        padding: 3%;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        padding: 1%;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .ser-info {
+        padding: 5px;
+    }
+
+    .mainbar .content .card .ser-info h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .mainbar .content .card .ser-info p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .mainbar .content .card .ser-info ul {
+        padding-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .mainbar .content .card .ser-info li {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .book-btn {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .mainbar .content .card .book-btn .cta-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 28px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        gap: 10px;
+        padding: 3%;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .ser-info {
+        padding: 5px;
+    }
+
+    .mainbar .content .card .ser-info h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .mainbar .content .card .ser-info p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .mainbar .content .card .ser-info ul {
+        padding-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .mainbar .content .card .ser-info li {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .book-btn {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .mainbar .content .card .book-btn .cta-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

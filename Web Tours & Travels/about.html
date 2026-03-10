@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tours & Travels</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <!-- FONT AWESOME ICON CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- META DATA -->
+    <meta name="description"
+        content="Web Tours & Travels Maharashtra based professional car travel agency hai jo city travel, outstation trips aur driver on hire services provide karti hai.">
+    <meta name="author" content="Mo. Sarfraj Shaikh">
+    <meta name="keywords" content="Web Tours and Travels, Web Tours & Travels, Web Tour & Travel">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/img/Logo_DP.jpg.jpeg" type="image/x-icon">
+    <!-- ANIMATE CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS SCRIPT AND CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWIPER JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--=============== LOADER ===============-->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!--=============== NAVBAR ===============-->
+    <nav class="navbar">
+        <header class="head">
+            <a href="./index.html">
+                <img class="logo" src="./assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels" loading="lazy">
+            </a>
+
+            <ul class="menu-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active-menu" href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./fleet.html">Fleet</a></li>
+                <li><a href="./drivers.html">Drivers</a></li>
+                <li><a href="./booking.html">Booking</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./tutorials.html">Tutorials</a></li>
+            </ul>
+
+            <div class="btn-container">
+                <a href="tel:+919307256102" class="call-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    Call Now
+                </a>
+                <i onclick="openSidebar()" class="fa-solid fa-bars menu-btn"></i>
+            </div>
+        </header>
+    </nav>
+
+    <!--=============== SIDEBAR - DRAWER ===============-->
+    <div class="sidebarBg" id="sidebarBg">
+        <aside class="sidebar" id="sidebar">
+            <div class="top">
+                <a href="./index.html">
+                    <img class="logo" src="./assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
+                        loading="lazy">
+                </a>
+
+                <i onclick="closeSidebar()" id="close-menu" class="fa-solid fa-x close-menu"></i>
+            </div>
+            <div class="main">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="active-menu">
+                        <a href="./about.html">
+                            <i class="fa-solid fa-circle-info"></i>
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./services.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./fleet.html">
+                            <i class="fa-solid fa-car"></i>
+                            Fleet
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./drivers.html">
+                            <i class="fa-solid fa-users"></i>
+                            Drivers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./booking.html">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Booking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html">
+                            <i class="fa-solid fa-message"></i>
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./tutorials.html">
+                            <i class="fa-solid fa-circle-play"></i>
+                            Tutorials
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./faq.html">
+                            <i class="fa-solid fa-circle-question"></i>
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li class="call-btn">
+                        <a href="tel:+919307256102">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Call Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!--=============== MAIN CONTENT SECTION ===============-->
+    <main class="mainbar">
+
+        <div class="topbar">
+            <h2>About Web Tours & Travels</h2>
+            <p>Maharashtra's most trusted car travel agency since 2020</p>
+        </div>
+
+        <div class="content">
+            <div class="story">
+                <h3>Our Story</h3>
+                <div class="divider-line"></div>
+                <p>Founded in 2020 in Mumbai, <strong>Web Tours & Travels</strong> started with a simple mission — to
+                    make travel across Maharashtra safe, comfortable, and affordable. What began with just idea but now
+                    grown into a fleet of vehicles serving thousands of customers every month. <br> <br>
+
+                    We operate across all major cities in Maharashtra including Mumbai, Pune, Nagpur, Nashik, and
+                    Aurangabad, with outstation services to Goa, Gujarat, Karnataka, and Madhya Pradesh. <br> <br>
+
+                    Our team of professional drivers ensures every journey is a pleasant experience. Whether it's a
+                    quick airport transfer or a week-long outstation trip, <strong>Web Tours & Travels</strong> is your
+                    trusted companion on the road.</p>
+            </div>
+
+            <div class="stats">
+
+                <div class="stats-card">
+                    <i class="fa-solid fa-users logo"></i>
+                    <p class="title">1,000+</p>
+                    <p class="descr">Happy Customers</p>
+                </div>
+
+                <div class="stats-card">
+                    <i class="fa-solid fa-award logo"></i>
+                    <p class="title">5+</p>
+                    <p class="descr">Years Experience</p>
+                </div>
+
+                <div class="stats-card">
+                    <i class="fa-solid fa-location-dot logo"></i>
+                    <p class="title">5,000+</p>
+                    <p class="descr">Trips Completed</p>
+                </div>
+
+                <div class="stats-card">
+                    <i class="fa-solid fa-clock logo"></i>
+                    <p class="title">365 Days</p>
+                    <p class="descr">We're Available For You</p>
+                </div>
+            </div>
+        </div>
+
+        <!--=============== CORE VALUE SECTION ===============-->
+        <div class="core-bg">
+
+            <div class="headbar" data-aos="fade-up">
+                <h3>Our Core Values</h3>
+                <p>What drives us every day</p>
+                <div class="divider-line"></div>
+
+                <div class="content">
+
+                    <div class="stats-card">
+                        <i class="fa-solid fa-shield-heart logo"></i>
+                        <p class="title">Safety First</p>
+                        <p class="descr">Every vehicle is GPS-tracked with verified, trained drivers. Your safety is non-negotiable.</p>
+
+                    </div>
+
+                    <div class="stats-card">
+                        <i class="fa-solid fa-star logo"></i>
+                        <p class="title">Customer Satisfaction</p>
+                        <p class="descr">We go above and beyond to ensure every trip exceeds expectations. 4.8 ★ average rating.</p>
+
+                    </div>
+
+                    <div class="stats-card">
+                        <i class="fa-solid fa-award logo"></i>
+                        <p class="title">Transparency</p>
+                        <p class="descr">No hidden charges, no surge pricing. What we quote is what you pay, always.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!--=============== FOOTER SECTION ===============-->
+    <footer class="footer-bg">
+        <div class="footer-con">
+
+            <div class="company">
+
+                <a href="./index.html">
+                    <img class="logo" src="./assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
+                        loading="lazy">
+                </a>
+
+                <p>Your trusted car travel partner across Maharashtra and beyond. Safe, reliable, and comfortable
+                    journeys since 2020.</p>
+            </div>
+
+            <div class="links">
+
+                <div class="quick-link">
+                    <h4>Quick Links</h4>
+                    <ol>
+
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="./services.html">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="./fleet.html">Fleet</a>
+                        </li>
+
+                        <li>
+                            <a href="./drivers.html">Drivers</a>
+                        </li>
+
+                        <li>
+                            <a href="./booking.html">Booking</a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="./tutorials.html">Tutorials</a>
+                        </li>
+
+                        <li>
+                            <a href="./faq.html">FAQ</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="policies-link">
+                    <h4>Policies</h4>
+                    <ol>
+
+                        <li>
+                            <a href="./Policies/travel-rates.html">Travel Rates</a>
+                        </li>
+
+                        <li>
+                            <a href="./Policies/terms-and-conditions.html">Terms & Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="./Policies/privacy-policy.html">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./Policies/disclaimer.html">Disclaimer</a>
+                        </li>
+
+                        <li>
+                            <a href="./Policies/refund-policy.html">Refund Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./Policies/cancellation-policy.html">Cancellation Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./Policies/booking-policy.html">Booking Policy</a>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="contact">
+                <h4>Contact</h4>
+
+                <ol>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919307256102">+91 9307256102</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:ctces29@gmail.com">ctces29@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-map"></i>
+                        <a href="https://maps.app.goo.gl/ePC2G1127SaTqHQLA" target="_blank">Mumbai, Maharashtra,
+                            India</a>
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="credit-con">
+            <div class="company">
+                <i class="fa-regular fa-copyright"></i>
+                <span id="com-credit-txt"></span>
+            </div>
+            <div class="dev">
+                <p>Design & Developed By <a href="https://www.linkedin.com/in/sarfraj-shaikh" target="_blank">Mo.
+                        Sarfraj Shaikh</a></p>
+
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sarfraj-shaikh" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/workwithsarfraj" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- AOS INIT -->
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+        });
+    </script>
+
+    <!-- CUSTOM JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
