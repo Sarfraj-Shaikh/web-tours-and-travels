@@ -126,6 +126,7 @@
     justify-content: start;
     align-items: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .mainbar .content form .input-box .driver-con .tickbox {
@@ -139,6 +140,43 @@
     font-size: 14px;
     color: #4a4a4b;
     margin-inline: 10px;
+}
+
+.mainbar .content form .input-box .consent-con {
+    width: 100%;
+    background-color: #F0F2F5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mainbar .content form .input-box .consent-con .tickbox {
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.mainbar .content form .input-box .consent-con p {
+    font-size: 14px;
+    color: #4a4a4b;
+    margin: 10px 3px;
+    line-height: 30px;
+}
+
+.mainbar .content form .input-box .consent-con p a {
+    font-size: 14px;
+    color: #0000da;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content form .input-box .consent-con p a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease-in;
 }
 
 .mainbar .content form .input-box label {
@@ -264,6 +302,13 @@
     background-color: #13347a;
     transition: 0.3s ease-in;
 }
+
+.mainbar .content form button:disabled {
+    background-color: #F0F2F5;
+    color: #858585;
+    cursor: not-allowed;
+}
+
 
 /* =============== RESPONSIVE =============== */
 

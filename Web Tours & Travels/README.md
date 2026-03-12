@@ -151,10 +151,16 @@ project-root
 ├── css/
 │   ├── style.css
 │   ├── common.css
-│   ├── responsive.css
+│   ├── booking.css
+│   ├── about.css
+│   ├── drivers.css
+│   ├── fleet.css
+│   ├── services.css
+│   ├── toast.css
 │
 ├── js/
-│   └── script.js
+│   ├── script.js
+│   ├── booking.js
 │
 ```
 
