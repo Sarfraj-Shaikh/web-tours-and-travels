@@ -139,7 +139,7 @@ project-root
 ├── contact.html
 ├── feedbacks.html
 │
-├── policies/
+├── policies
 │   ├── travel-rates.html
 │   ├── booking-policy.html
 │   ├── cancellation-policy.html
@@ -148,19 +148,21 @@ project-root
 │   ├── terms-conditions.html
 │   └── disclaimer.html
 │
-├── css/
-│   ├── style.css
+├── css
 │   ├── common.css
 │   ├── booking.css
 │   ├── about.css
+│   ├── contact.css
 │   ├── drivers.css
 │   ├── fleet.css
 │   ├── services.css
+│   ├── style.css
 │   ├── toast.css
 │
-├── js/
-│   ├── script.js
+├── js
 │   ├── booking.js
+│   ├── contact.js
+│   ├── script.js
 │
 ```
 
@@ -171,7 +173,7 @@ project-root
 1. Download or clone the repository
 
 ```
-git clone <repository-url>
+git clone <https://github.com/Sarfraj-Shaikh/web-tours-and-travels.git>
 ```
 
 2. Open the project folder.

@@ -164,47 +164,57 @@
             <form>
 
                 <div class="input-flex">
-                    <div class="input-box">
+                    <div class="input-box" id="fNameBg">
                         <label for="name">Full Name<sup>*</sup></label>
-                        <input type="text" name="name" placeholder="Enter Your Name" id="full-name" >
+                        <input type="text" name="name" placeholder="Enter Your Name" id="full-name">
                     </div>
 
-                    <div class="input-box">
+                    <div class="input-box" id="mNumBg">
                         <label for="number">Mobile Number<sup>*</sup></label>
-                        <input type="tel" name="number" maxlength="10" placeholder="Enter Your Mobile Number" id="mob-num">
+                        <input type="tel" name="number" maxlength="10" placeholder="Enter Your Mobile Number"
+                            id="mob-num">
                     </div>
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="emailBg">
                     <label for="email">Email ID<sup>*</sup></label>
                     <input type="email" name="email" placeholder="Enter Your Email ID" id="email-id">
                 </div>
 
                 <div class="input-flex">
-                    <div class="input-box">
+                    <div class="input-box" id="pickupBg">
                         <label for="pickup">Pickup Location<sup>*</sup></label>
                         <input type="text" name="pickup" placeholder="Enter Your Pickup Address" id="pick-up">
                     </div>
 
-                    <div class="input-box">
+                    <div class="input-box" id="dropBg">
                         <label for="drop">Drop Location<sup>*</sup></label>
                         <input type="text" name="drop" placeholder="Enter Your Drop Address" id="drop-add">
                     </div>
                 </div>
 
                 <div class="input-flex">
-                    <div class="input-box">
+                    <div class="input-box" id="tDateBg">
                         <label for="date">Travel Date<sup>*</sup></label>
                         <input type="date" name="date" placeholder="Pick Travel Date" id="travel-date">
                     </div>
 
-                    <div class="input-box">
+                    <div class="input-box" id="tTimeBg">
                         <label for="time">Travel Time<sup>*</sup></label>
                         <input type="time" name="time" placeholder="Pick Travel Time" id="travel-time">
                     </div>
                 </div>
 
-                <div class="input-box">
+                <div class="btn-con" id="btnOne">
+
+                    <div class="btn2" onclick="stepOne()">
+                        Next
+                        <i class="fa-regular fa-circle-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="input-box" id="tripBg">
                     <label for="trip-type">Trip Type<sup>*</sup></label>
                     <div class="trip-con">
                         <p class="" onclick="oneWay()" id="one-way">One Way</p>
@@ -212,19 +222,53 @@
                     </div>
                 </div>
 
-                <div class="input-box" onclick="hireDriver()">
+                <div class="input-box waitBg" id="waiting-bg">
+                    <label for="waiting">Waiting Time<sup>*</sup></label>
+                    <input type="text" name="waiting" placeholder="Enter Your Waiting Duration" id="waiting-time">
+
+                    <p class="info"><b>Note:</b> Charges may vary depending on waiting time for round trip</p>
+                </div>
+
+                <div class="input-box" id="cabBg">
+                    <label for="trip-type">Cab Type<sup>*</sup></label>
+                    <div class="cab-type-con">
+                        <p class="active" onclick="cabAc()" id="cab-ac">
+                            <i class="fa-solid fa-snowflake"></i>AC
+                        </p>
+                        <p class="" onclick="cabNonAc()" id="cab-non-ac">
+                            <i class="fa-solid fa-temperature-low"></i>Non-AC
+                        </p>
+                    </div>
+
+                    <p class="info"><b>Note:</b> Charges may vary depending on the cab type selected AC or Non-AC</p>
+                </div>
+
+                <div class="input-box" onclick="hireDriver()" id="driverBg">
                     <label for="driver">Hire Driver</label>
                     <div class="driver-con">
-                        <input type="checkbox" name="driver" class="tickbox" id="only-driver" onclick="hireDriver()" id="hire-driver">
+                        <input type="checkbox" name="driver" class="tickbox" id="only-driver" onclick="hireDriver()">
                         <p>Hire Only Driver (I have my own car)</p>
                     </div>
                 </div>
 
-                <div class="price-bg">
+                <div class="input-box" onclick="outstationTrip()" id="outstationBg">
+                    <label for="driver">Outstation Trip</label>
+                    <div class="driver-con">
+                        <input type="checkbox" name="driver" class="tickbox" id="outstation-trip"
+                            onclick="outstationTrip()">
+                        <p>Your travel location are outside the city?</p>
+                    </div>
+
+                    <p class="info"><b>Note:</b> Charges may vary for outstation trips</p>
+                </div>
+
+                
+                <div class="price-bg" id="priceBg">
                     <div class="left">
                         <p class="title">Price Estimator</p>
                         <p class="desc">Approx. Distance (km)<sup>*</sup></p>
-                        <input type="number" maxlength="3" name="kilo-meter" placeholder="E.g. 150" id="kilo-meter" oninput="priceEstimator()" disabled="disabled">
+                        <input type="number" maxlength="3" name="kilo-meter" placeholder="E.g. 150" id="kilo-meter"
+                        oninput="priceEstimator()">
                     </div>
                     <div class="right">
                         <p class="title">Estimated Price</p>
@@ -232,12 +276,55 @@
                     </div>
                 </div>
 
-                <div class="input-box">
+                <div class="btn-con" id="stepTwo">
+
+                    <div class="btn1" onclick="preStepTwo()">
+                        <i class="fa-regular fa-circle-left"></i>
+                        Previous
+                    </div>
+
+                    <div class="btn2" onclick="nextStepTwo()">
+                        Next
+                        <i class="fa-regular fa-circle-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="input-box" id="vehicleBg">
+                    <label for="vehicle-type">Vehicle Details<sup>・❥・</sup></label>
+                    <div class="vehicle-con">
+                        <div class="left">
+                            <img src="./assets/img/cars/maruti-suzuki-wagonr.webp" loading="lazy">
+                        </div>
+                        <div class="right">
+                            <h3>Maruti Suzuki Wagonr</h3>
+                            <p>
+                                <i class="fa-solid fa-users"></i>
+                                4 Seats
+                            </p>
+
+                            <p id="ac-txt">
+                                <i class="fa-solid fa-snowflake"></i>
+                                AC Available
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-car"></i>
+                                Well Maintain
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="info"><b>Note:</b> Final price and complete details will be shared after your booking
+                        request is received, including toll & parking inclusion, driver details, vehicle information and
+                        booking status</p>
+                </div>
+
+                <div class="input-box" id="remarkBg">
                     <label for="remark">Remarks</label>
                     <input type="text" name="remark" placeholder="Any Additional Requirement?" id="remark">
                 </div>
 
-                <div class="input-box" onclick="giveConsent()">
+                <div class="input-box" onclick="giveConsent()" id="consentBg">
                     <label for="consent">Consent<sup>*</sup></label>
                     <div class="consent-con">
                         <input type="checkbox" name="consent" class="tickbox" onclick="giveConsent()"
@@ -254,7 +341,7 @@
                     </div>
                 </div>
 
-                <button onclick="return formVal()" id="book-btn" disabled="disabled">Confirm Booking</button>
+                <button onclick="return submitForm()" id="book-btn" disabled="disabled">Confirm Booking</button>
 
             </form>
         </div>

@@ -497,18 +497,19 @@
 
     .mainbar .content .story h3 {
         font-size: 28px;
+        padding: 10px;
     }
 
     .mainbar .content .story .divider-line {
         width: 50px;
         height: 5px;
-        margin: 10px 10px 20px 0px;
+        margin: 10px 10px 20px 10px;
         border-radius: 90px;
     }
 
     .mainbar .content .story p {
         font-size: 16px;
-        padding: 3px;
+        padding: 10px;
     }
 
     .mainbar .content .stats {
