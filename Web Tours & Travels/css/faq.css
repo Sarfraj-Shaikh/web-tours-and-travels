@@ -1,0 +1,318 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #fafcff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #a7bae1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+}
+
+.mainbar .content .info {
+    background-color: #FFFFFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.mainbar .content .info .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #64728767;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.mainbar .content .info .top h4 {
+    font-size: 16px;
+    color: #000000;
+    margin: 5px;
+}
+
+.mainbar .content .info .top i {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px 5px;
+    color: #2563EA;
+    font-size: 20px;
+    border-radius: 100%;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .info .top i:hover {
+    background-color: #EEEEEE;
+    transition: 0.3s ease-in;
+}
+
+.mainbar .content .info .bottom {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.mainbar .content .info .bottom p {
+    font-size: 14px;
+    color: #4d5765;
+    width: 100%;
+    padding: 10px;
+}
+
+.mainbar .content .info .bottom p a {
+    color: #13347a;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .info .bottom p a:hover {
+    text-decoration: underline;
+    color: #2563EA;
+    transition: 0.3s ease-in;
+}
+
+.mainbar .content .info.close .top {
+    border: none;
+}
+
+.mainbar .content .info.close .bottom {
+    display: none;
+}
+
+.mainbar .content .info.open .top {
+    border-bottom: 1px solid #64728767;
+}
+
+.mainbar .content .info.open .top i {
+    transform: rotate(180deg);
+}
+
+.mainbar .content .info.open .bottom {
+    display: flex;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .mainbar .content .info {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .mainbar .content .info .top {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .mainbar .content .info .top h4 {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .mainbar .content .info .top i {
+        width: 45px;
+        height: 45px;
+        margin: 0px 5px;
+        font-size: 20px;
+    }
+
+    .mainbar .content .info .bottom {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .info .bottom p {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 34px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .mainbar .content .info {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .mainbar .content .info .top {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .mainbar .content .info .top h4 {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .mainbar .content .info .top i {
+        width: 45px;
+        height: 45px;
+        margin: 0px 5px;
+        font-size: 20px;
+    }
+
+    .mainbar .content .info .bottom {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .info .bottom p {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .mainbar .content .info {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .mainbar .content .info .top {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .mainbar .content .info .top h4 {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .mainbar .content .info .top i {
+        width: 40px;
+        height: 40px;
+        margin: 0px 5px;
+        font-size: 18px;
+    }
+
+    .mainbar .content .info .bottom {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .info .bottom p {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+    }
+}

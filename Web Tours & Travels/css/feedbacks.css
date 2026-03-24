@@ -1,0 +1,344 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #fafcff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #a7bae1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+}
+
+.mainbar .content .card {
+    width: 450px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border: 2px solid #E4E9EF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.mainbar .content .card .message {
+    width: 100%;
+    color: #323843;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.mainbar .content .card .star {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 14px;
+    color: #9810FA;
+}
+
+.mainbar .content .card .user-con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.mainbar .content .card .user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.mainbar .content .card .user-info .dp {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #EEE7FD;
+    color: #9810FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+.mainbar .content .card .user-con .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+}
+
+.mainbar .content .card .user-info .info .name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mainbar .content .card .user-info .info .u-city {
+    color: #677288;
+    font-size: 12px;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        height: 220px;
+        gap: 15px;
+        padding: 15px 20px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .message {
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+
+    .mainbar .content .card .star {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .user-con {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .mainbar .content .card .user-info {
+        gap: 10px;
+    }
+
+    .mainbar .content .card .user-info .dp {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .mainbar .content .card .user-con .info {
+        gap: 5px;
+    }
+
+    .mainbar .content .card .user-info .info .name {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .user-info .info .u-city {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 34px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        height: 230px;
+        gap: 15px;
+        padding: 15px 20px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .message {
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+
+    .mainbar .content .card .star {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .user-con {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .mainbar .content .card .user-info {
+        gap: 10px;
+    }
+
+    .mainbar .content .card .user-info .dp {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .mainbar .content .card .user-con .info {
+        gap: 5px;
+    }
+
+    .mainbar .content .card .user-info .info .name {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .user-info .info .u-city {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .mainbar .content .card {
+        width: 100%;
+        height: 220px;
+        gap: 15px;
+        padding: 15px 20px;
+        margin: 10px;
+    }
+
+    .mainbar .content .card .message {
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+
+    .mainbar .content .card .star {
+        font-size: 12px;
+    }
+
+    .mainbar .content .card .user-con {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .mainbar .content .card .user-info {
+        gap: 10px;
+    }
+
+    .mainbar .content .card .user-info .dp {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        display: none;
+    }
+
+    .mainbar .content .card .user-con .info {
+        gap: 5px;
+    }
+
+    .mainbar .content .card .user-info .info .name {
+        font-size: 14px;
+    }
+
+    .mainbar .content .card .user-info .info .u-city {
+        font-size: 12px;
+    }
+}

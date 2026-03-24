@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/cancel-booking.css">
     <link rel="stylesheet" href="./css/toast.css">
     <!-- FONT AWESOME ICON CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
@@ -133,7 +133,7 @@
                         </a>
                     </li>
 
-                    <li class="active-menu">
+                    <li>
                         <a href="./faq.html">
                             <i class="fa-solid fa-circle-question"></i>
                             FAQ
@@ -155,154 +155,62 @@
     <main class="mainbar">
 
         <div class="topbar">
-            <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know about our services</p>
+            <h2>Cancel Travel Booking</h2>
+            <p>Fill the form below and we'll confirm your cancellation</p>
         </div>
 
         <div class="content">
 
-            <div class="info close">
-                <div class="top">
-                    <h4>What is the per km rate?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
+            <form>
+
+                <div class="input-flex">
+                    <div class="input-box" id="fNameBg">
+                        <label for="name">Full Name<sup>*</sup></label>
+                        <input type="text" name="name" placeholder="Enter Your Name" id="full-name">
+                    </div>
+
+                    <div class="input-box" id="mNumBg">
+                        <label for="number">Mobile Number<sup>*</sup></label>
+                        <input type="tel" name="number" maxlength="10" placeholder="Enter Your Mobile Number"
+                            id="mob-num">
+                    </div>
                 </div>
 
-                <div class="bottom">
-                    <p id="faq-msg">Travel rates depend on factors such as timing, session, routes, and the overall
-                        situation. If you would like to know the current travel rate based on your specific travel
-                        details, please feel free to <a href="./contact.html" target="_blank">contact us.</a></p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What are the driver night charges?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
+                <div class="input-box" id="emailBg">
+                    <label for="email">Email ID<sup>*</sup></label>
+                    <input type="email" name="email" placeholder="Enter Your Email ID" id="email-id">
                 </div>
 
-                <div class="bottom">
-                    <p id="faq-msg">Night charges (10 PM to 6 AM) are ₹250 extra for local trips and ₹350 for outstation
-                        trips. This is a one-time charge per night, not per hour. If you would like to know the current
-                        night charges based on your specific travel details, please feel free to <a
-                            href="./contact.html" target="_blank">contact us.</a></p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What is the cancellation policy?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
+                <div class="input-box" id="refNoBg">
+                    <label for="refNum">Referance Number<sup>*</sup></label>
+                    <input type="text" name="refNum" placeholder="Enter Your Booking Referance Number" id="refNum">
                 </div>
 
-                <div class="bottom">
-                    <p id="faq-msg">If you would like to cancel your travel booking, please visit the <a
-                            href="./Policies/cancellation-policy.html" target="_blank"> Cancellation Policy </a> page.
-                        For refund-related information, kindly refer to the <a href="./Policies/refund-policy.html"
-                            target="_blank"> Refund Policy </a> page. <br> <br>
-
-                        If your request meets the applicable policy criteria, your booking will be canceled accordingly.
-                        <br>
-
-                        Additionally, if you are eligible under the refund policy, your payment will be processed for a
-                        refund. <br> <br>
-
-                        For further details or assistance, please feel free to <a href="./contact.html" target="_blank">
-                            contact us. </a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What is the refund policy?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
+                <div class="input-box" id="remarkBg">
+                    <label for="remark">Reason<sup>*</sup></label>
+                    <input type="text" name="remark" placeholder="Enter Cancellation Reason" id="remark">
                 </div>
 
-                <div class="bottom">
-                    <p id="faq-msg">We always strive to ensure that if a customer falls under the <a href="./Policies/refund-policy.html" target="_blank">Refund Policy </a> criteria, their payment is refunded accordingly. <br> <br>
-
-                    To learn more about the <a href="./Policies/refund-policy.html" target="_blank">Refund Policy,</a> and to read and understand it in detail, please visit the <a href="./Policies/refund-policy.html" target="_blank">Refund Policy </a> page.
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What are outstation charges?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Outstation <a href="./Policies/travel-rates.html" target="_blank"> travel charges </a> depend on multiple factors, such as your trip type, cab type, waiting time, total distance, and whether the travel is during the day or night. <br> <br>
-
-                    For more detailed information, please feel free to <a href="./contact.html" target="_blank"> contact us. </a> You can also see an approximate fare mentioned at the time of booking.
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>Do you provide airport pickup services?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
+                <div class="input-box" onclick="giveConsent()" id="consentBg">
+                    <label for="consent">Consent<sup>*</sup></label>
+                    <div class="consent-con">
+                        <input type="checkbox" name="consent" class="tickbox" onclick="giveConsent()"
+                            id="consent-tickbox">
+                        <p>I confirm that I agree to the <a href="./Policies/booking-policy.html"
+                                target="_blank">Booking Policy</a> and have reviewed the <a
+                                href="./Policies/travel-rates.html" target="_blank">travel rates.</a> I also acknowledge
+                            that I have read and understood the <a href="./Policies/terms-and-conditions.html"
+                                target="_blank">Terms & Conditions</a>, <a href="./Policies/privacy-policy.html"
+                                target="_blank">Privacy Policy</a>, <a href="./Policies/refund-policy.html"
+                                target="_blank">Refund</a> & <a href="./Policies/cancellation-policy.html"
+                                target="_blank">Cancellation Policy</a>, and have taken note of the <a
+                                href="./Policies/disclaimer.html" target="_blank">Disclaimer.</a></p>
+                    </div>
                 </div>
 
-                <div class="bottom">
-                    <p id="faq-msg">Yes! We provide airport pickup and drop services at all major Maharashtra airports including Mumbai, Pune, Nagpur, and Aurangabad.
-                    </p>
-                </div>
-            </div>
+                <button onclick="return formVal()" id="book-btn" disabled="disabled">Cancel My Booking</button>
 
-            <div class="info close">
-                <div class="top">
-                    <h4>Can I book a driver without a car?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Absolutely! Our 'Driver Only' service lets you hire an experienced, verified driver for your own vehicle, <a href="./booking.html" target="_blank"> Hire a Driver. </a> For further details or assistance, please feel free to <a href="./contact.html" target="_blank"> contact us. </a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>Are your vehicles GPS tracked?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Yes, our vehicles are equipped with GPS tracking. You can share your own live trip location with friend and family members for added safety.
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What payment methods do you accept?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">We accept Cash, UPI (GPay, PhonePe, Paytm Etc.), and net banking. For corporate clients, we offer custom payment method. For further details or assistance, please feel free to <a href="./contact.html" target="_blank"> contact us. </a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>Do you provide child seats?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Yes, child/baby seats are available on request at extra charge. Please mention this while booking so we can arrange it in advance. <br> <br>
-                    
-                    For further details or assistance, please feel free to <a href="./contact.html" target="_blank"> contact us. </a>
-                    </p>
-                </div>
-            </div>
-
+            </form>
         </div>
 
         <div class="toast-container" id="toastContainer"></div>
@@ -469,7 +377,7 @@
 
     <!-- CUSTOM JS -->
     <script src="./js/script.js"></script>
-    <script src="./js/faq.js"></script>
+    <script src="./js/cancel-booking.js"></script>
     <script src="./js/toast.js"></script>
 </body>
 

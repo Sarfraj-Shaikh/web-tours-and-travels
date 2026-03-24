@@ -128,16 +128,19 @@ The project uses a simple front-end stack for reliability and performance.
 ```
 project-root
 │
-├── index.html
 ├── about.html
-├── services.html
-├── fleet.html
-├── drivers.html
+├── booking-update.html
 ├── booking.html
-├── tutorials.html
-├── faq.html
+├── cancel-booking.html
 ├── contact.html
+├── drivers.html
+├── faq.html
+├── feedback.html
 ├── feedbacks.html
+├── fleet.html
+├── index.html
+├── services.html
+├── tutorials.html
 │
 ├── policies
 │   ├── travel-rates.html
@@ -150,18 +153,27 @@ project-root
 │
 ├── css
 │   ├── common.css
+│   ├── booking-update.css
 │   ├── booking.css
+│   ├── cancel-booking.css
 │   ├── about.css
 │   ├── contact.css
 │   ├── drivers.css
+│   ├── faq.css
+│   ├── feedback.css
+│   ├── feedbacks.css
 │   ├── fleet.css
 │   ├── services.css
 │   ├── style.css
 │   ├── toast.css
+│   ├── tutorials.css
 │
 ├── js
+│   ├── booking-update.js
 │   ├── booking.js
+│   ├── cancel-booking.js
 │   ├── contact.js
+│   ├── faq.js
 │   ├── script.js
 │
 ```

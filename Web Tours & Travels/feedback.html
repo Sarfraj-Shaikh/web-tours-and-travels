@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/feedback.css">
     <link rel="stylesheet" href="./css/toast.css">
     <!-- FONT AWESOME ICON CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
@@ -133,7 +133,7 @@
                         </a>
                     </li>
 
-                    <li class="active-menu">
+                    <li>
                         <a href="./faq.html">
                             <i class="fa-solid fa-circle-question"></i>
                             FAQ
@@ -155,152 +155,47 @@
     <main class="mainbar">
 
         <div class="topbar">
-            <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know about our services</p>
+            <h2>Feedback Form</h2>
+            <p>Your Opinion and review Matters – Tell Us More</p>
         </div>
 
         <div class="content">
 
-            <div class="info close">
-                <div class="top">
-                    <h4>What is the per km rate?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
+            <div class="right">
 
-                <div class="bottom">
-                    <p id="faq-msg">Travel rates depend on factors such as timing, session, routes, and the overall
-                        situation. If you would like to know the current travel rate based on your specific travel
-                        details, please feel free to <a href="./contact.html" target="_blank">contact us.</a></p>
-                </div>
-            </div>
+                <form>
+                    <h3>Tell Us What You Think</h3>
 
-            <div class="info close">
-                <div class="top">
-                    <h4>What are the driver night charges?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
+                    <div class="inputBox">
+                        <p>Full Name <sup>*</sup></p>
+                        <input type="text" required placeholder="Enter Your Full Name" id="full-name">
+                    </div>
 
-                <div class="bottom">
-                    <p id="faq-msg">Night charges (10 PM to 6 AM) are ₹250 extra for local trips and ₹350 for outstation
-                        trips. This is a one-time charge per night, not per hour. If you would like to know the current
-                        night charges based on your specific travel details, please feel free to <a
-                            href="./contact.html" target="_blank">contact us.</a></p>
-                </div>
-            </div>
+                    <div class="inputBox">
+                        <p>Phone <sup>*</sup></p>
+                        <input type="number" maxlength="10" placeholder="Enter Your Mobile Number" id="mobile-number">
+                    </div>
 
-            <div class="info close">
-                <div class="top">
-                    <h4>What is the cancellation policy?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
+                    <div class="inputBox">
+                        <p>Email ID <sup>*</sup></p>
+                        <input type="email" placeholder="Enter Your Email ID" id="email-id">
+                    </div>
 
-                <div class="bottom">
-                    <p id="faq-msg">If you would like to cancel your travel booking, please visit the <a
-                            href="./Policies/cancellation-policy.html" target="_blank"> Cancellation Policy </a> page.
-                        For refund-related information, kindly refer to the <a href="./Policies/refund-policy.html"
-                            target="_blank"> Refund Policy </a> page. <br> <br>
+                    <div class="inputBox">
+                        <p>Subject <sup>*</sup></p>
+                        <input type="text" placeholder="Enter Subject" id="subject"
+                            value="𝗠𝘆 𝗙𝗲𝗲𝗱𝗯𝗮𝗰𝗸 𝗮𝗻𝗱 𝗛𝗼𝗻𝗲𝘀𝘁 𝗥𝗲𝘃𝗶𝗲𝘄 𝗼𝗿 𝗥𝗲𝗮𝗹 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲">
+                    </div>
 
-                        If your request meets the applicable policy criteria, your booking will be canceled accordingly.
-                        <br>
+                    <div class="inputBox">
+                        <p>Message <sup>*</sup></p>
+                        <textarea placeholder="Enter Your Message" id="user-message">𝗥𝗮𝘁𝗶𝗻𝗴: [ - / 𝟱 ] 
+𝗜'𝗺 𝗙𝗿𝗼𝗺: 
+                        </textarea>
+                    </div>
 
-                        Additionally, if you are eligible under the refund policy, your payment will be processed for a
-                        refund. <br> <br>
-
-                        For further details or assistance, please feel free to <a href="./contact.html" target="_blank">
-                            contact us. </a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What is the refund policy?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">We always strive to ensure that if a customer falls under the <a href="./Policies/refund-policy.html" target="_blank">Refund Policy </a> criteria, their payment is refunded accordingly. <br> <br>
-
-                    To learn more about the <a href="./Policies/refund-policy.html" target="_blank">Refund Policy,</a> and to read and understand it in detail, please visit the <a href="./Policies/refund-policy.html" target="_blank">Refund Policy </a> page.
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What are outstation charges?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Outstation <a href="./Policies/travel-rates.html" target="_blank"> travel charges </a> depend on multiple factors, such as your trip type, cab type, waiting time, total distance, and whether the travel is during the day or night. <br> <br>
-
-                    For more detailed information, please feel free to <a href="./contact.html" target="_blank"> contact us. </a> You can also see an approximate fare mentioned at the time of booking.
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>Do you provide airport pickup services?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Yes! We provide airport pickup and drop services at all major Maharashtra airports including Mumbai, Pune, Nagpur, and Aurangabad.
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>Can I book a driver without a car?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Absolutely! Our 'Driver Only' service lets you hire an experienced, verified driver for your own vehicle, <a href="./booking.html" target="_blank"> Hire a Driver. </a> For further details or assistance, please feel free to <a href="./contact.html" target="_blank"> contact us. </a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>Are your vehicles GPS tracked?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Yes, our vehicles are equipped with GPS tracking. You can share your own live trip location with friend and family members for added safety.
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>What payment methods do you accept?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">We accept Cash, UPI (GPay, PhonePe, Paytm Etc.), and net banking. For corporate clients, we offer custom payment method. For further details or assistance, please feel free to <a href="./contact.html" target="_blank"> contact us. </a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="info close">
-                <div class="top">
-                    <h4>Do you provide child seats?</h4>
-                    <i class="fa-solid fa-angle-down" onclick="faqToggle(this)"></i>
-                </div>
-
-                <div class="bottom">
-                    <p id="faq-msg">Yes, child/baby seats are available on request at extra charge. Please mention this while booking so we can arrange it in advance. <br> <br>
-                    
-                    For further details or assistance, please feel free to <a href="./contact.html" target="_blank"> contact us. </a>
-                    </p>
-                </div>
+                    <button type="submit" class="cta-btn" onclick="return formValidator()">Send Message</button>
+                </form>
             </div>
 
         </div>
@@ -469,7 +364,7 @@
 
     <!-- CUSTOM JS -->
     <script src="./js/script.js"></script>
-    <script src="./js/faq.js"></script>
+    <script src="./js/feedback.js"></script>
     <script src="./js/toast.js"></script>
 </body>
 

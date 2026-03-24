@@ -1,0 +1,397 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #fafcff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #a7bae1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.mainbar .content .left {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5px;
+    padding: 3%;
+}
+
+.mainbar .content .left h3 {
+    font-size: 28px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mainbar .content .left .box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.mainbar .content .left .box .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #e1edfd;
+    color: #2563ea;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.mainbar .content .left .box .info {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.mainbar .content .left .box .info .title {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.mainbar .content .left .box .info .detail {
+    font-size: 14px;
+    color: #4b4b4b;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .left .box .info .detail:hover {
+    color: #2563ea;
+    transition: 0.3s ease-in;
+}
+
+.mainbar .content .left a {
+    width: 95%;
+    background-color: #1daf52;
+    color: #ffffff;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .left a i {
+    margin-right: 5px;
+}
+
+.mainbar .content .left a:hover {
+    background-color: #036a29;
+    transition: 0.3s ease-in;
+}
+
+.mainbar .content .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 3%;
+}
+
+.mainbar .content .right form {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #dfe5ec;
+    padding: 3%;
+    overflow: hidden;
+}
+
+.mainbar .content .right form h3 {
+    font-size: 26px;
+    margin: 10px;
+}
+
+.mainbar .content .right form .inputBox {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.mainbar .content .right form .inputBox p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin: 5px 0px;
+}
+
+.mainbar .content .right form .inputBox p sup {
+    color: #ff0000;
+}
+
+.mainbar .content .right form .inputBox input {
+    width: 100%;
+    height: 50px;
+    background-color: #f9fafb;
+    border: 2px solid #dfe5ec;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mainbar .content .right form .inputBox textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #f9fafb;
+    border: 2px solid #dfe5ec;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mainbar .content .right form .cta-btn {
+    width: 100%;
+    padding: 13px;
+    margin: 10px;
+    background-color: #2563ea;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.mainbar .content .right form .cta-btn:hover {
+    background-color: #13347a;
+    transition: 0.3s ease-in;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .mainbar .content .left {
+        width: 100%;
+        margin: 5px;
+        padding: 3%;
+    }
+
+    .mainbar .content .left h3 {
+        font-size: 26px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content .right {
+        width: 100%;
+        margin: 5px;
+        padding: 3%;
+    }
+
+    .mainbar .content .right form {
+        width: 100%;
+        margin: 10px;
+        padding: 3%;
+    }
+
+    .mainbar .content .right form h3 {
+        font-size: 26px;
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 34px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .mainbar .content .left {
+        width: 100%;
+        margin: 5px;
+        padding: 3%;
+    }
+
+    .mainbar .content .left h3 {
+        font-size: 24px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content .right {
+        width: 100%;
+        margin: 5px;
+        padding: 3%;
+    }
+
+    .mainbar .content .right form {
+        width: 100%;
+        margin: 10px;
+        padding: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainbar .content .right form h3 {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .mainbar .content .right form .cta-btn {
+        width: 100%;
+        padding: 13px;
+        margin: 0px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .mainbar .content .left {
+        width: 100%;
+        margin: 5px;
+        padding: 3%;
+    }
+
+    .mainbar .content .left h3 {
+        font-size: 22px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .mainbar .content .right {
+        width: 100%;
+        margin: 5px;
+        padding: 3%;
+    }
+
+    .mainbar .content .right form {
+        width: 100%;
+        margin: 10px;
+        padding: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainbar .content .right form h3 {
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    .mainbar .content .right form .cta-btn {
+        width: 95%;
+        padding: 13px;
+        margin: 0px;
+        font-size: 16px;
+    }
+}

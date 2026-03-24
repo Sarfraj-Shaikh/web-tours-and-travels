@@ -387,6 +387,7 @@ function preStepTwo() {
     let driverBg = document.getElementById("driverBg");
     let outBg = document.getElementById("outstationBg");
     let priceBg = document.getElementById("priceBg");
+    let refNoBg = document.getElementById("refNoBg");
 
     tripBg.style.display = "none";
     waitingBg.style.display = "none";
@@ -395,6 +396,7 @@ function preStepTwo() {
     outBg.style.display = "none";
     btnTwo.style.display = "none";
     priceBg.style.display = "none";
+    refNoBg.style.display = "none";
 
     fNameBg.style.display = "block";
     mNumberBg.style.display = "block";
@@ -455,6 +457,8 @@ function nextStepTwo() {
         let outBg = document.getElementById("outstationBg");
         let btnTwo = document.getElementById("stepTwo");
         let priceBg = document.getElementById("priceBg");
+        let refNoBg = document.getElementById("refNoBg");
+
 
         let vehicleBg = document.getElementById("vehicleBg");
         let remarkBg = document.getElementById("remarkBg");
@@ -473,6 +477,7 @@ function nextStepTwo() {
         remarkBg.style.display = "block";
         consentBg.style.display = "block";
         bookBtn.style.display = "block";
+        refNoBg.style.display = "block";
 
     }
 }
@@ -597,38 +602,72 @@ function submitForm() {
     let userFirstName = userName.charAt(0);
     let refNumber = userFirstName + year + mon + date + userMob;
 
+    let refNumInput = document.getElementById("refNum");
+    let refNum = document.getElementById("refNum").value;
+    let remarkInput = document.getElementById("remark");
+    let remark = document.getElementById("remark").value;
+
     let text =
-        "𝗛𝗲𝗹𝗹𝗼 ⚝ 𝗪𝗲𝗯 𝗧𝗼𝘂𝗿𝘀 𝗮𝗻𝗱 𝗧𝗿𝗮𝘃𝗲𝗹𝘀,\n" +
-        "⋆✦⋆ Car Travel Booking Request​ ⋆✦⋆\n\n" +
-        "I would like to use your car travel services. I have read all the rules, regulations, and guidelines mentioned on the booking page form, and I agree to them.\n\n" +
-        "All my booking details are mentioned below. Please confirm the booking. I look forward to your response. \n\n" +
+        "𝗗𝗲𝗮𝗿 ⚝ 𝗪𝗲𝗯 𝗧𝗼𝘂𝗿𝘀 𝗮𝗻𝗱 𝗧𝗿𝗮𝘃𝗲𝗹𝘀,\n" +
+        "⋆✦⋆ Booking Details Update Request​ ⋆✦⋆\n\n" +
+        "I want to update my travel booking details. I have read all the rules, regulations, and guidelines mentioned on the update booking details page form, and I agree to them.\n\n" +
+        "All my booking details are mentioned below. Please confirm the updated booking details \n\n" +
         "𝗡𝗮𝗺𝗲: " + userName + "\n" +
         "𝗠𝗼𝗯𝗶𝗹𝗲 𝗡𝘂𝗺𝗯𝗲𝗿: " + userNumber + "\n" +
         "𝗘𝗺𝗮𝗶𝗹 𝗜𝗗: " + userEmail + "\n" +
-        "𝗥𝗲𝗳𝗲𝗿𝗲𝗻𝗰𝗲 𝗡𝘂𝗺𝗯𝗲𝗿: " + refNumber + "\n\n" +
+        "𝗡𝗲𝘄 𝗥𝗲𝗳𝗲𝗿𝗲𝗻𝗰𝗲 𝗡𝘂𝗺𝗯𝗲𝗿: " + refNumber + "\n\n" +
         "Travel journey details are mentioned below: \n\n" +
-        "𝗣𝗶𝗰𝗸𝘂𝗽 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: " + userPickup + "\n" +
-        "𝗗𝗿𝗼𝗽 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: " + userDrop + "\n" +
-        "𝗧𝗿𝗮𝘃𝗲𝗹 𝗗𝗮𝘁𝗲: " + userDate + "\n" +
-        "𝗧𝗿𝗮𝘃𝗲𝗹 𝗧𝗶𝗺𝗲: " + userTime + "\n" +
-        "𝗧𝗿𝗶𝗽 𝗧𝘆𝗽𝗲: " + userTrip + "\n" +
+        "𝗡𝗲𝘄 𝗣𝗶𝗰𝗸𝘂𝗽 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: " + userPickup + "\n" +
+        "𝗡𝗲𝘄 𝗗𝗿𝗼𝗽 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: " + userDrop + "\n" +
+        "𝗡𝗲𝘄 𝗧𝗿𝗮𝘃𝗲𝗹 𝗗𝗮𝘁𝗲: " + userDate + "\n" +
+        "𝗡𝗲𝘄 𝗧𝗿𝗮𝘃𝗲𝗹 𝗧𝗶𝗺𝗲: " + userTime + "\n" +
+        "𝗡𝗲𝘄 𝗧𝗿𝗶𝗽 𝗧𝘆𝗽𝗲: " + userTrip + "\n" +
         "𝗢𝘂𝘁𝘀𝘁𝗮𝘁𝗶𝗼𝗻 𝗧𝗿𝗶𝗽: " + outTrip + "\n" +
         "𝗧𝗼𝗹𝗹 𝗧𝗮𝘅 𝗮𝗻𝗱 𝗣𝗮𝗿𝗸𝗶𝗻𝗴 𝗖𝗵𝗮𝗿𝗴𝗲𝘀: " + "Kindly wait for confirmation from 𝗪𝗲𝗯 𝗧𝗼𝘂𝗿𝘀 𝗮𝗻𝗱 𝗧𝗿𝗮𝘃𝗲𝗹𝘀" + "\n" +
-        "𝗪𝗮𝗶𝘁𝗶𝗻𝗴 𝗧𝗶𝗺𝗲: " + waitMsg + "\n" +
+        "𝗡𝗲𝘄 𝗪𝗮𝗶𝘁𝗶𝗻𝗴 𝗧𝗶𝗺𝗲: " + waitMsg + "\n" +
         "𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 𝗢𝗻𝗹𝘆 𝗗𝗿𝗶𝘃𝗲𝗿: " + userDriver + "\n" +
-        "𝗕𝗼𝗼𝗸𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗼𝗻 " + date + "-" + mon + "-" + year + " 𝗮𝘁 " + time + "\n\n" +
+        "𝗕𝗼𝗼𝗸𝗶𝗻𝗴 𝗗𝗲𝘁𝗮𝗶𝗹𝘀 𝗨𝗽𝗱𝗮𝘁𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗼𝗻 " + date + "-" + mon + "-" + year + " 𝗮𝘁 " + time + "\n\n" +
         "Vehicle details are mentioned below: \n\n" +
         "𝗩𝗲𝗵𝗶𝗰𝗹𝗲: " + "Maruti Suzuki Wagonr" + "\n" +
         "𝗖𝗮𝗯 𝗧𝘆𝗽𝗲: " + cabType + "\n" +
         "𝗠𝗼𝗱𝗲𝗹: " + "Tours H3" + "\n" +
         "𝗦𝗲𝗮𝘁𝘀: " + "4" + "\n\n" +
         "Price Estimator details are mentioned below: \n\n" +
-        "𝗔𝗽𝗽𝗿𝗼𝘅. 𝗗𝗶𝘀𝘁𝗮𝗻𝗰𝗲: " + userDistance + " Km " + "\n" +
-        "𝗘𝘀𝘁𝗶𝗺𝗮𝘁𝗲𝗱 𝗣𝗿𝗶𝗰𝗲: " + userAmt + "\n" +
-        "𝗥𝗲𝗺𝗮𝗿𝗸𝘀: " + userRemark + "\n\n" +
+        "𝗡𝗲𝘄 𝗔𝗽𝗽𝗿𝗼𝘅. 𝗗𝗶𝘀𝘁𝗮𝗻𝗰𝗲: " + userDistance + " Km " + "\n" +
+        "𝗡𝗲𝘄 𝗘𝘀𝘁𝗶𝗺𝗮𝘁𝗲𝗱 𝗣𝗿𝗶𝗰𝗲: " + userAmt + "\n\n" +
+        "𝗢𝗹𝗱 𝗥𝗲𝗳𝗲𝗿𝗲𝗻𝗰𝗲 𝗡𝘂𝗺𝗯𝗲𝗿: " + refNum + "\n" +
+        "𝗥𝗲𝗮𝘀𝗼𝗻: " + userRemark + "\n\n" +
         "I confirm that I agree to the 𝐁𝐨𝐨𝐤𝐢𝐧𝐠 𝐏𝐨𝐥𝐢𝐜𝐲 and have reviewed the 𝐭𝐫𝐚𝐯𝐞𝐥 𝐫𝐚𝐭𝐞𝐬. I also acknowledge that I have read and understood the 𝐓𝐞𝐫𝐦𝐬 & 𝐂𝐨𝐧𝐝𝐢𝐭𝐢𝐨𝐧𝐬, 𝐏𝐫𝐢𝐯𝐚𝐜𝐲 𝐏𝐨𝐥𝐢𝐜𝐲, 𝐑𝐞𝐟𝐮𝐧𝐝 & 𝐂𝐚𝐧𝐜𝐞𝐥𝐥𝐚𝐭𝐢𝐨𝐧 𝐏𝐨𝐥𝐢𝐜𝐲, and have taken note of the 𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫. \n\n" +
         "𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂,\n" + userName;
 
-    let whatsappURL = "https://wa.me/+91" + waNum + "?text=" + encodeURIComponent(text);
-    window.open(whatsappURL, "_blank");
+    if (refNum.trim() === "") {
+
+        showToast('error', 'Enter Reference Number');
+        refNumInput.style.border = "1px solid red";
+        refNumInput.style.outline = "1px solid red";
+
+    } else {
+
+        refNumInput.style.border = "1px solid #A7ADB8";
+        refNumInput.style.outline = "2px solid #2563EA";
+
+        // <--=============== REASON VALIDATION ===============-->
+
+        if (remark.trim() === "") {
+
+            showToast('error', 'Enter Your Reason');
+            remarkInput.style.border = "1px solid red";
+            remarkInput.style.outline = "1px solid red";
+
+        } else {
+
+            remarkInput.style.border = "1px solid #A7ADB8";
+            remarkInput.style.outline = "2px solid #2563EA";
+
+            let whatsappURL = "https://wa.me/+91" + waNum + "?text=" + encodeURIComponent(text);
+            window.open(whatsappURL, "_blank");
+        }
+    }
+
+    return false;
 }
