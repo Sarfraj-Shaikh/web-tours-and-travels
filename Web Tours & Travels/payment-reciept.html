@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Tours & Travels</title>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/refund-policy.css">
-    <link rel="stylesheet" href="../css/toast.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/payment-reciept.css">
+    <link rel="stylesheet" href="./css/toast.css">
     <!-- FONT AWESOME ICON CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <!-- META DATA -->
@@ -19,7 +19,7 @@
     <meta name="author" content="Mo. Sarfraj Shaikh">
     <meta name="keywords" content="Web Tours and Travels, Web Tours & Travels, Web Tour & Travel">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="../assets/img/Logo_DP.jpg.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/Logo_DP.jpg.jpeg" type="image/x-icon">
     <!-- ANIMATE CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- AOS SCRIPT AND CDN -->
@@ -39,20 +39,19 @@
     <!--=============== NAVBAR ===============-->
     <nav class="navbar">
         <header class="head">
-            <a href="../index.html">
-                <img class="logo" src="../assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
-                    loading="lazy">
+            <a href="./index.html">
+                <img class="logo" src="./assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels" loading="lazy">
             </a>
 
             <ul class="menu-list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../services.html">Services</a></li>
-                <li><a href="../fleet.html">Fleet</a></li>
-                <li><a href="../drivers.html">Drivers</a></li>
-                <li><a href="../booking.html">Booking</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../tutorials.html">Tutorials</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./fleet.html">Fleet</a></li>
+                <li><a href="./drivers.html">Drivers</a></li>
+                <li><a href="./booking.html">Booking</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./tutorials.html">Tutorials</a></li>
             </ul>
 
             <div class="btn-container">
@@ -69,8 +68,8 @@
     <div class="sidebarBg" id="sidebarBg">
         <aside class="sidebar" id="sidebar">
             <div class="top">
-                <a href="../index.html">
-                    <img class="logo" src="../assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
+                <a href="./index.html">
+                    <img class="logo" src="./assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
                         loading="lazy">
                 </a>
 
@@ -79,63 +78,63 @@
             <div class="main">
                 <ul>
                     <li>
-                        <a href="../index.html">
+                        <a href="./index.html">
                             <i class="fa-solid fa-house"></i>
                             Home
                         </a>
                     </li>
 
                     <li>
-                        <a href="../about.html">
+                        <a href="./about.html">
                             <i class="fa-solid fa-circle-info"></i>
                             About
                         </a>
                     </li>
 
                     <li>
-                        <a href="../services.html">
+                        <a href="./services.html">
                             <i class="fa-solid fa-briefcase"></i>
                             Services
                         </a>
                     </li>
 
                     <li>
-                        <a href="../fleet.html">
+                        <a href="./fleet.html">
                             <i class="fa-solid fa-car"></i>
                             Fleet
                         </a>
                     </li>
 
                     <li>
-                        <a href="../drivers.html">
+                        <a href="./drivers.html">
                             <i class="fa-solid fa-users"></i>
                             Drivers
                         </a>
                     </li>
 
                     <li>
-                        <a href="../booking.html">
+                        <a href="./booking.html">
                             <i class="fa-solid fa-calendar-check"></i>
                             Booking
                         </a>
                     </li>
 
                     <li>
-                        <a href="../contact.html">
+                        <a href="./contact.html">
                             <i class="fa-solid fa-message"></i>
                             Contact
                         </a>
                     </li>
 
                     <li>
-                        <a href="../tutorials.html">
+                        <a href="./tutorials.html">
                             <i class="fa-solid fa-circle-play"></i>
                             Tutorials
                         </a>
                     </li>
 
                     <li>
-                        <a href="../faq.html">
+                        <a href="./faq.html">
                             <i class="fa-solid fa-circle-question"></i>
                             FAQ
                         </a>
@@ -156,142 +155,116 @@
     <main class="mainbar">
 
         <div class="topbar">
-            <h2>Refund Policy</h2>
-            <p>Conditions and process for refund eligibility and timelines</p>
+            <h2>Digital Receipt</h2>
+            <p>Payment Confirmation and Invoice</p>
         </div>
 
         <div class="content">
 
-            <div class="messageBg">
-                <p>
+            <div class="main-wrapper">
 
-                <p>
-                    At Web Tours and Travels, we aim to maintain a fair and transparent refund process.
-                </p>
+                <div class="invoice-card print-container">
 
-                <br>
+                    <div class="invoice-top">
+                        <div>
+                            <h1 class="invoice-heading">PAYMENT</h1>
+                            <p class="invoice-status">
+                                <span class="paid-text">Digital Invoice</span>
+                            </p>
+                        </div>
 
-                <ul>
-                    <li>
-                        <b>1 • Cancellation-Based Refunds</b>
-                        <ul>
-                            <li>More than 24 hours before trip: 100% refund of advance payment</li>
-                            <li>12 to 24 hours before trip: 50% refund</li>
-                            <li>Less than 12 hours before trip: No refund</li>
-                        </ul>
-                    </li>
+                        <div class="brand-info">
+                            <p class="brand-name">Web Tours & Travels</p>
+                            <p class="brand-contact">Contact: +91 9307256102</p>
+                        </div>
+                    </div>
 
-                    <br>
+                    <form id="invoiceForm" class="invoice-form">
 
-                    <li>
-                        <b>2 • No-Show Policy</b>
-                        <ul>
-                            <li>If the customer does not appear at the pickup location without prior notice:</li>
-                            <ul>
-                                <li>No refund will be issued</li>
-                            </ul>
-                        </ul>
-                    </li>
+                        <div class="input-group full-width">
+                            <label>Payment Received From</label>
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="receivedFrom" placeholder="Sender's Name">
+                        </div>
 
-                    <br>
+                        <div class="input-group full-width">
+                            <label>Payment Received To</label>
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="receivedTo" placeholder="Receiver Name" value="Mo. Ejaj Shaikh">
+                        </div>
 
-                    <li>
-                        <b>3 • Trip Started Policy</b>
-                        <ul>
-                            <li>Once the trip has started:</li>
-                            <ul>
-                                <li>No refund is applicable under any circumstances</li>
-                            </ul>
-                        </ul>
-                    </li>
+                        <div class="input-group full-width">
+                            <label>Payment Reference Number</label>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <input type="text" id="refNumber" placeholder="Reference Number">
+                        </div>
 
-                    <br>
+                        <div class="input-group full-width">
+                            <label>Customer Email</label>
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="customerEmail" placeholder="Sender's Email" value="@gmail.com">
+                        </div>
 
-                    <li>
-                        <b>4 • Company Cancellation</b>
-                        <ul>
-                            <li>If Web Tours and Travels cancels the booking due to:</li>
-                            <ul>
-                                <li>Vehicle breakdown (without replacement)</li>
-                                <li>Driver unavailability</li>
-                                <li>Operational issues</li>
-                            </ul>
-                            <li><i>Full refund will be provided.</i></li>
-                        </ul>
-                    </li>
+                        <div class="input-group full-width">
+                            <label>Customer Mobile Number</label>
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="customerNumber" maxlength="10" placeholder="Sender's Number">
+                        </div>
 
-                    <br>
+                        <div class="input-group">
+                            <label>Payment Date</label>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <input type="date" id="payDate">
+                        </div>
 
-                    <li>
-                        <b>5 • Partial Refund Conditions</b>
-                        <ul>
-                            <li>Partial refunds may be considered only if:</li>
-                            <ul>
-                                <li>Trip is shortened due to valid reasons</li>
-                                <li>Service issue is verified by the company</li>
-                            </ul>
-                            <li>Final decision will be at company’s discretion.</li>
-                        </ul>
-                    </li>
+                        <div class="input-group">
+                            <label>Payment Time</label>
+                            <i class="fa-solid fa-clock"></i>
+                            <input type="time" id="payTime">
+                        </div>
 
-                    <br>
+                        <div class="input-group">
+                            <label>Transaction ID / UTR</label>
+                            <i class="fa-solid fa-hashtag"></i>
+                            <input type="text" id="utr" placeholder="12-digit number">
+                        </div>
 
-                    <li>
-                        <b>6 • Non-Refundable Charges</b>
-                        <ul>
-                            <li>The following are non-refundable:</li>
-                            <ul>
-                                <li>Driver allowance (if trip assigned)</li>
-                                <li>Toll and parking (if already incurred)</li>
-                                <li>State permits or entry fees</li>
-                            </ul>
-                        </ul>
-                    </li>
+                        <div class="input-group">
+                            <label>Paid By (Method)</label>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <input type="text" id="paidBy" placeholder="Google Pay / PhonePe" value="Online - UPI [  ]">
+                        </div>
 
-                    <br>
+                        <div class="input-group">
+                            <label>Total Amount (₹)</label>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <input type="number" id="amount" placeholder="0.00" class="amount-input" value="₹">
+                        </div>
 
-                    <li>
-                        <b>7 • Refund Processing Time</b>
-                        <ul>
-                            <li>Refunds will be processed within 5–7 business days.</li>
-                            <li>Amount will be credited via original payment method or agreed mode.</li>
-                        </ul>
-                    </li>
+                        <div class="input-group">
+                            <label>Status</label>
+                            <i class="fa-solid fa-circle"></i>
+                            <input type="text" id="status" placeholder="Payment Recived/Pending">
+                        </div>
 
-                    <br>
+                        <div class="input-group">
+                            <label>Remarks</label>
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <textarea id="remarks" placeholder="Optional"></textarea>
+                        </div>
 
-                    <li>
-                        <b>8 • Force Majeure (Uncontrollable Situations)</b>
-                        <ul>
-                            <li>No refund will be provided for cancellations due to:</li>
-                            <ul>
-                                <li>Natural disasters</li>
-                                <li>Government restrictions</li>
-                                <li>Road closures or strikes</li>
-                                <li>Weather disruptions</li>
-                            </ul>
-                        </ul>
-                    </li>
+                    </form>
 
-                    <br>
+                    <div class="invoice-footer">
+                        <p class="footer-note">
+                            This is a computer generated invoice and does not require a physical signature.
+                        </p>
+                        <p class="footer-thanks" onclick="return invoiceFormVal()">
+                            Thank You for Your Payment!
+                        </p>
+                    </div>
 
-                    <li>
-                        <b>9 • Refund Disputes</b>
-                        <ul>
-                            <li>All refund-related disputes must be reported within 24 hours of trip time.</li>
-                            <li>Claims made after this period may not be considered.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <br>
-
-                <p>
-                    By booking with Web Tours and Travels, you agree to this refund policy.
-                </p>
-
-                <br>
-                </p>
+                </div>
             </div>
 
         </div>
@@ -307,8 +280,8 @@
 
             <div class="company">
 
-                <a href="../index.html">
-                    <img class="logo" src="../assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
+                <a href="./index.html">
+                    <img class="logo" src="./assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
                         loading="lazy">
                 </a>
 
@@ -323,35 +296,35 @@
                     <ol>
 
                         <li>
-                            <a href="../about.html">About</a>
+                            <a href="./about.html">About</a>
                         </li>
 
                         <li>
-                            <a href="../services.html">Services</a>
+                            <a href="./services.html">Services</a>
                         </li>
 
                         <li>
-                            <a href="../fleet.html">Fleet</a>
+                            <a href="./fleet.html">Fleet</a>
                         </li>
 
                         <li>
-                            <a href="../drivers.html">Drivers</a>
+                            <a href="./drivers.html">Drivers</a>
                         </li>
 
                         <li>
-                            <a href="../booking.html">Booking</a>
+                            <a href="./booking.html">Booking</a>
                         </li>
 
                         <li>
-                            <a href="../contact.html">Contact</a>
+                            <a href="./contact.html">Contact</a>
                         </li>
 
                         <li>
-                            <a href="../tutorials.html">Tutorials</a>
+                            <a href="./tutorials.html">Tutorials</a>
                         </li>
 
                         <li>
-                            <a href="../faq.html">FAQ</a>
+                            <a href="./faq.html">FAQ</a>
                         </li>
                     </ol>
                 </div>
@@ -361,31 +334,31 @@
                     <ol>
 
                         <li>
-                            <a href="./travel-rates.html">Travel Rates</a>
+                            <a href="./Policies/travel-rates.html">Travel Rates</a>
                         </li>
 
                         <li>
-                            <a href="./terms-and-conditions.html">Terms & Conditions</a>
+                            <a href="./Policies/terms-and-conditions.html">Terms & Conditions</a>
                         </li>
 
                         <li>
-                            <a href="./privacy-policy.html">Privacy Policy</a>
+                            <a href="./Policies/privacy-policy.html">Privacy Policy</a>
                         </li>
 
                         <li>
-                            <a href="./disclaimer.html">Disclaimer</a>
+                            <a href="./Policies/disclaimer.html">Disclaimer</a>
                         </li>
 
                         <li>
-                            <a href="./refund-policy.html">Refund Policy</a>
+                            <a href="./Policies/refund-policy.html">Refund Policy</a>
                         </li>
 
                         <li>
-                            <a href="./cancellation-policy.html">Cancellation Policy</a>
+                            <a href="./Policies/cancellation-policy.html">Cancellation Policy</a>
                         </li>
 
                         <li>
-                            <a href="./booking-policy.html">Booking Policy</a>
+                            <a href="./Policies/booking-policy.html">Booking Policy</a>
                         </li>
                     </ol>
                 </div>
@@ -459,8 +432,9 @@
     </script>
 
     <!-- CUSTOM JS -->
-    <script src="../js/script.js"></script>
-    <script src="../js/toast.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/payment-reciept.js"></script>
+    <script src="./js/toast.js"></script>
 </body>
 
 </html>

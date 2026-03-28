@@ -1,0 +1,357 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+  width: 100%;
+  padding: 70px 0px 0px 0px;
+  background-color: #FAFCFF;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+  width: 100%;
+  padding: 8% 5%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.mainbar .topbar p {
+  font-size: 16px;
+  color: #A7BAE1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+  width: 100%;
+  background-color: #F9FAFB;
+  padding: 5%;
+}
+
+.mainbar .content .glass-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container {
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Padding Helpers */
+.card-center {
+  padding: 24px;
+  text-align: center;
+}
+
+.card-padding {
+  padding: 20px;
+}
+
+/* Headings */
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+/* QR Box */
+.qr-box {
+  background: #f3f4f6;
+  padding: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.qr-img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-blue {
+  background: #2563eb;
+}
+
+.btn-blue:hover {
+  background: #1d4ed8;
+}
+
+.btn-green {
+  background: #16a34a;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.btn-green:hover {
+  background: #15803d;
+}
+
+/* Rows */
+.row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Border bottom */
+.border-bottom {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+/* Labels and Text */
+.small-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.big-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.medium-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Icons */
+.icon-blue {
+  font-size: 20px;
+  color: #3b82f6;
+}
+
+/* Copy Button */
+.copy-btn {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.copy-btn:hover {
+  background: #eff6ff;
+}
+
+.copy-icon {
+  font-size: 20px;
+  color: #2563eb;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 16px;
+  border-left: 4px solid #22c55e;
+  padding-left: 12px;
+}
+
+/* Form */
+.form-space {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-box:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.35);
+}
+
+/* Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.grid-2-date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .grid-2,
+  .grid-2-date {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* WhatsApp icon */
+.whatsapp-icon {
+  font-size: 20px;
+}
+
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+  /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+  .mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+  }
+
+  .mainbar .topbar h2 {
+    font-size: 36px;
+  }
+
+  .mainbar .topbar p {
+    font-size: 16px;
+  }
+
+  /* =============== CONTENT SECTION =============== */
+
+  .mainbar .content {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .payment-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+  .mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+  }
+
+  .mainbar .topbar h2 {
+    font-size: 34px;
+  }
+
+  .mainbar .topbar p {
+    font-size: 16px;
+  }
+
+  /* =============== CONTENT SECTION =============== */
+
+  .mainbar .content {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .payment-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+  .mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+  }
+
+  .mainbar .topbar h2 {
+    font-size: 30px;
+  }
+
+  .mainbar .topbar p {
+    font-size: 16px;
+  }
+
+  /* =============== CONTENT SECTION =============== */
+
+  .mainbar .content {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .payment-container {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,212 @@
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #FAFCFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #A7BAE1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%;
+}
+
+.mainbar .content .messageBg {
+    width: 80%;
+    text-align: left;
+    padding: 10px;
+}
+
+.mainbar .content .messageBg i {
+    font-size: 14px;
+    color: #434445;
+}
+
+.mainbar .content .messageBg p {
+    font-size: 16px;
+    color: #434445;
+}
+
+.mainbar .content .messageBg li {
+    font-size: 16px;
+    color: #434445;
+}
+
+.mainbar .content .messageBg li b {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 5% 10%;
+    }
+
+    .mainbar .content .messageBg {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .messageBg i {
+        font-size: 14px;
+    }
+
+    .mainbar .content .messageBg p {
+        font-size: 16px;
+    }
+
+    .mainbar .content .messageBg li {
+        font-size: 16px;
+    }
+
+    .mainbar .content .messageBg li b {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 34px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 5% 10%;
+    }
+
+    .mainbar .content .messageBg {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .messageBg i {
+        font-size: 14px;
+    }
+
+    .mainbar .content .messageBg p {
+        font-size: 16px;
+    }
+
+    .mainbar .content .messageBg li {
+        font-size: 16px;
+    }
+
+    .mainbar .content .messageBg li b {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 5% 10%;
+    }
+
+    .mainbar .content .messageBg {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainbar .content .messageBg i {
+        font-size: 14px;
+    }
+
+    .mainbar .content .messageBg p {
+        font-size: 16px;
+    }
+
+    .mainbar .content .messageBg li {
+        font-size: 16px;
+    }
+
+    .mainbar .content .messageBg li b {
+        font-size: 18px;
+    }
+}

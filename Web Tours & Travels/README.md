@@ -79,7 +79,6 @@ Users can reach the agency through:
 * Phone
 * WhatsApp
 * Contact form
-* Office location
 
 ---
 
@@ -113,7 +112,7 @@ The project uses a simple front-end stack for reliability and performance.
 **Design Approach**
 
 * Mobile-first layout
-* Responsive grid system
+* Responsive design
 * Card-based UI sections
 
 **External Resources**
@@ -129,6 +128,7 @@ The project uses a simple front-end stack for reliability and performance.
 project-root
 │
 ├── about.html
+├── booking-confirmation.html
 ├── booking-update.html
 ├── booking.html
 ├── cancel-booking.html
@@ -139,6 +139,8 @@ project-root
 ├── feedbacks.html
 ├── fleet.html
 ├── index.html
+├── payment-reciept.html
+├── payment.html
 ├── services.html
 ├── tutorials.html
 │
@@ -153,27 +155,42 @@ project-root
 │
 ├── css
 │   ├── common.css
+│   ├── booking-policy.css
+│   ├── booking-confirmation.css
 │   ├── booking-update.css
 │   ├── booking.css
 │   ├── cancel-booking.css
+│   ├── cancellation-policy.css
 │   ├── about.css
 │   ├── contact.css
+│   ├── disclaimer.css
 │   ├── drivers.css
 │   ├── faq.css
 │   ├── feedback.css
 │   ├── feedbacks.css
 │   ├── fleet.css
+│   ├── payment-reciept.css
+│   ├── payment.css
+│   ├── privacy-policy.css
+│   ├── refund-policy.css
+│   ├── responsive.css
 │   ├── services.css
 │   ├── style.css
+│   ├── terms-and-condition.css
 │   ├── toast.css
+│   ├── travel-rates.css
 │   ├── tutorials.css
 │
 ├── js
+│   ├── booking-confirmation.js
 │   ├── booking-update.js
 │   ├── booking.js
 │   ├── cancel-booking.js
 │   ├── contact.js
 │   ├── faq.js
+│   ├── feedback.js
+│   ├── payment-reciept.js
+│   ├── payment.js
 │   ├── script.js
 │
 ```
@@ -206,7 +223,7 @@ The website is optimized for:
 
 Key responsive elements include:
 
-* Flexible layout grids
+* Flexible layout
 * Adaptive card sections
 * Mobile sidebar navigation
 * Touch-friendly buttons
@@ -231,20 +248,20 @@ These pages ensure transparency and help avoid service misunderstandings.
 
 Potential upgrades for future versions:
 
-* Online payment integration
-* Real-time booking system
-* Driver availability management
-* Admin dashboard
-* Automated email confirmations
+* Online payment availability
+* Online booking system
+* Driver availability
+* Better Booking dashboard
+* Manual confirmations
 * GPS vehicle tracking integration
 
 ---
 
 # 📬 Support
 
-For technical questions or website improvements, please contact the development team or repository maintainer.
+For technical questions or website improvements, please contact the developer or repository maintainer.
 
 ---
 
-✅ **Status:** In Development
-📍 **Service Area:** Maharashtra, India
+✅ **Status:** Completed
+📍 **Service Area:** Mumbai, Maharashtra, India

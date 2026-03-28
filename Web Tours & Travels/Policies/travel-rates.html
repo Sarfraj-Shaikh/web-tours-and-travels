@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tours & Travels</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/travel-rates.css">
+    <link rel="stylesheet" href="../css/toast.css">
+    <!-- FONT AWESOME ICON CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- META DATA -->
+    <meta name="description"
+        content="Web Tours & Travels Maharashtra based professional car travel agency hai jo city travel, outstation trips aur driver on hire services provide karti hai.">
+    <meta name="author" content="Mo. Sarfraj Shaikh">
+    <meta name="keywords" content="Web Tours and Travels, Web Tours & Travels, Web Tour & Travel">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../assets/img/Logo_DP.jpg.jpeg" type="image/x-icon">
+    <!-- ANIMATE CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS SCRIPT AND CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWIPER JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--=============== LOADER ===============-->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!--=============== NAVBAR ===============-->
+    <nav class="navbar">
+        <header class="head">
+            <a href="../index.html">
+                <img class="logo" src="../assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
+                    loading="lazy">
+            </a>
+
+            <ul class="menu-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../fleet.html">Fleet</a></li>
+                <li><a href="../drivers.html">Drivers</a></li>
+                <li><a href="../booking.html">Booking</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../tutorials.html">Tutorials</a></li>
+            </ul>
+
+            <div class="btn-container">
+                <a href="tel:+919307256102" class="call-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    Call Now
+                </a>
+                <i onclick="openSidebar()" class="fa-solid fa-bars menu-btn"></i>
+            </div>
+        </header>
+    </nav>
+
+    <!--=============== SIDEBAR - DRAWER ===============-->
+    <div class="sidebarBg" id="sidebarBg">
+        <aside class="sidebar" id="sidebar">
+            <div class="top">
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
+                        loading="lazy">
+                </a>
+
+                <i onclick="closeSidebar()" id="close-menu" class="fa-solid fa-x close-menu"></i>
+            </div>
+            <div class="main">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../about.html">
+                            <i class="fa-solid fa-circle-info"></i>
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../services.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../fleet.html">
+                            <i class="fa-solid fa-car"></i>
+                            Fleet
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../drivers.html">
+                            <i class="fa-solid fa-users"></i>
+                            Drivers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../booking.html">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Booking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../contact.html">
+                            <i class="fa-solid fa-message"></i>
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../tutorials.html">
+                            <i class="fa-solid fa-circle-play"></i>
+                            Tutorials
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../faq.html">
+                            <i class="fa-solid fa-circle-question"></i>
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li class="call-btn">
+                        <a href="tel:+919307256102">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Call Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!--=============== MAIN CONTENT SECTION ===============-->
+    <main class="mainbar">
+
+        <div class="topbar">
+            <h2>Travel Rates Policy</h2>
+            <p>Pricing structure, vehicle rates, extra charges, and applicable conditions</p>
+        </div>
+
+        <div class="content">
+
+            <div class="messageBg">
+                <p>
+
+                <p>
+                    At Web Tours and Travels, we follow a transparent and structured pricing system to ensure clarity
+                    and fairness for all customers.
+                </p>
+
+                <br>
+
+                <ul>
+                    <li>
+                        <b>1 • Rate Structure</b>
+                        <ul>
+                            <li>Travel charges are calculated based on:</li>
+                            <li>Distance (per kilometer)</li>
+                            <li>Duration (per day/hour)</li>
+                            <li>Vehicle type selected</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>2 • Minimum Billing</b>
+                        <ul>
+                            <li>A minimum daily kilometer limit applies (e.g., 250 km/day for outstation trips).</li>
+                            <li>Even if usage is lower, minimum charges will be applicable.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>3 • Inclusions</b>
+                        <br>
+                        Base fare typically includes:
+                        <ul>
+                            <li>Vehicle usage</li>
+                            <li>Driver service</li>
+                            <li>Fuel charges</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>4 • Exclusions (Extra Charges)</b>
+                        <br>
+                        The following are not included in base fare unless specified:
+                        <ul>
+                            <li>Toll charges</li>
+                            <li>Parking fees</li>
+                            <li>State entry taxes</li>
+                            <li>Driver allowance (for outstation/multi-day trips)</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>5 • Night Charges</b>
+                        <ul>
+                            <li>Additional charges may apply for travel between 10:00 PM to 6:00 AM.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>6 • Waiting Charges</b>
+                        <ul>
+                            <li>Waiting time beyond agreed duration may be charged on hourly basis.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>7 • Outstation Travel</b>
+                        <ul>
+                            <li>Charges are calculated on:</li>
+                            <li>Round-trip distance basis (garage to garage)</li>
+                            <li>Minimum daily kilometers</li>
+                            <li>Driver allowance is charged per day.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>8 • One-Way Trips</b>
+                        <ul>
+                            <li>One-way bookings may include return distance charges unless otherwise agreed.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>9 • Airport Transfers</b>
+                        <ul>
+                            <li>Fixed rates apply within city limits.</li>
+                            <li>Waiting beyond free time will incur extra charges.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>10 • Peak Pricing</b>
+                        <ul>
+                            <li>Rates may increase during:</li>
+                            <li>Festivals</li>
+                            <li>Weekends</li>
+                            <li>High-demand periods</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>11 • Payment Terms</b>
+                        <ul>
+                            <li>Advance payment may be required to confirm booking.</li>
+                            <li>Full payment must be completed before trip or after trip completion.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>12 • Pricing Transparency</b>
+                        <ul>
+                            <li>All charges will be communicated before booking confirmation.</li>
+                            <li>No hidden charges will be applied beyond agreed terms.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>13 • Changes in Trip</b>
+                        <ul>
+                            <li>Any route change, extra distance, or extended usage will result in additional charges.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <b>14 • Disputes</b>
+                        <ul>
+                            <li>Any pricing disputes must be raised during or immediately after the trip.</li>
+                            <li>Final billing will be based on agreed terms and actual usage.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+
+                <p>
+                    We are committed to providing reliable, fair, and transparent pricing for every journey.
+                </p> <br>
+
+                <i>* Rates are subject to change. Final pricing provided at time of booking confirmation.</i>
+            </p>
+            </div>
+
+        </div>
+
+        <div class="toast-container" id="toastContainer"></div>
+
+    </main>
+
+
+    <!--=============== FOOTER SECTION ===============-->
+    <footer class="footer-bg">
+        <div class="footer-con">
+
+            <div class="company">
+
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/Web_Tours_and_Travels.png" alt="Web Tours & Travels"
+                        loading="lazy">
+                </a>
+
+                <p>Your trusted car travel partner across Maharashtra and beyond. Safe, reliable, and comfortable
+                    journeys since 2020.</p>
+            </div>
+
+            <div class="links">
+
+                <div class="quick-link">
+                    <h4>Quick Links</h4>
+                    <ol>
+
+                        <li>
+                            <a href="../about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="../services.html">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="../fleet.html">Fleet</a>
+                        </li>
+
+                        <li>
+                            <a href="../drivers.html">Drivers</a>
+                        </li>
+
+                        <li>
+                            <a href="../booking.html">Booking</a>
+                        </li>
+
+                        <li>
+                            <a href="../contact.html">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="../tutorials.html">Tutorials</a>
+                        </li>
+
+                        <li>
+                            <a href="../faq.html">FAQ</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="policies-link">
+                    <h4>Policies</h4>
+                    <ol>
+
+                        <li>
+                            <a href="./travel-rates.html">Travel Rates</a>
+                        </li>
+
+                        <li>
+                            <a href="./terms-and-conditions.html">Terms & Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="./privacy-policy.html">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./disclaimer.html">Disclaimer</a>
+                        </li>
+
+                        <li>
+                            <a href="./refund-policy.html">Refund Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./cancellation-policy.html">Cancellation Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="./booking-policy.html">Booking Policy</a>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="contact">
+                <h4>Contact</h4>
+
+                <ol>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919307256102">+91 9307256102</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:ctces29@gmail.com">ctces29@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-map"></i>
+                        <a href="https://maps.app.goo.gl/ePC2G1127SaTqHQLA" target="_blank">Mumbai, Maharashtra,
+                            India</a>
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="credit-con">
+            <div class="company">
+                <i class="fa-regular fa-copyright"></i>
+                <span id="com-credit-txt"></span>
+            </div>
+            <div class="dev">
+                <p>Design & Developed By <a href="https://www.linkedin.com/in/sarfraj-shaikh" target="_blank">Mo.
+                        Sarfraj Shaikh</a></p>
+
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sarfraj-shaikh" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/workwithsarfraj" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- AOS INIT -->
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+        });
+    </script>
+
+    <!-- CUSTOM JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/toast.js"></script>
+</body>
+
+</html>

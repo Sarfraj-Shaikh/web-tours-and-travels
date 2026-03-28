@@ -1,0 +1,403 @@
+@media print {
+
+    nav.navbar,
+    .sidebarBg,
+    #loader,
+    .menu-list,
+    .btn-container {
+        display: none !important;
+    }
+
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mainbar {
+        padding-top: 0 !important;
+    }
+
+}
+
+/* =============== MAIN CONTENT SECTION =============== */
+
+.mainbar {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+    background-color: #FAFCFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+.mainbar .topbar {
+    width: 100%;
+    padding: 8% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #13347a;
+}
+
+.mainbar .topbar h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.mainbar .topbar p {
+    font-size: 16px;
+    color: #A7BAE1;
+}
+
+/* =============== CONTENT SECTION =============== */
+
+.mainbar .content {
+    width: 100%;
+    background-color: #F9FAFB;
+    padding: 5%;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    max-width: 60%;
+    margin: auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Header Bar */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* Title */
+.main-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Icon Color */
+.icon-blue {
+    color: #2563eb;
+}
+
+/* Badge */
+.badge {
+    font-size: 14px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+/* Invoice Card */
+.invoice-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+}
+
+/* Responsive Card Padding */
+@media (min-width: 768px) {
+    .invoice-card {
+        padding: 32px;
+    }
+}
+
+/* Invoice Top Section */
+.invoice-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+/* Invoice Heading */
+.invoice-heading {
+    font-size: 30px;
+    font-weight: 800;
+    color: #2563eb;
+    letter-spacing: -0.5px;
+}
+
+/* Invoice Status */
+.invoice-status {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* Paid Text */
+.paid-text {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+/* Brand Info */
+.brand-info {
+    text-align: right;
+}
+
+.brand-name {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.brand-contact {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Form Grid */
+.invoice-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .invoice-form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Full width input */
+.full-width {
+    grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+    .full-width {
+        grid-column: span 2;
+    }
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+}
+
+/* Labels */
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 4px;
+}
+
+/* Icons */
+.input-group i {
+    position: absolute;
+    left: 12px;
+    top: 38px;
+    color: #6b7280;
+}
+
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Focus Effect */
+.input-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0px 0px 0px 2px rgba(37, 99, 235, 0.3);
+}
+
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    /* resize: none; */
+    overflow: hidden;
+    min-height: 50px;
+}
+
+.input-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0px 0px 0px 2px rgba(37, 99, 235, 0.3);
+}
+
+/* Amount Input Special */
+.amount-input {
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+/* Footer */
+.invoice-footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.footer-note {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.footer-thanks {
+    font-size: 14px;
+    font-weight: 700;
+    color: #374151;
+    margin-top: 8px;
+}
+
+/* Print Section */
+.print-section {
+    margin-top: 32px;
+}
+
+/* Print Button */
+.print-btn {
+    width: 100%;
+    background: #1f2937;
+    color: white;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.print-btn:hover {
+    background: black;
+}
+
+/* Print Tip */
+.print-tip {
+    text-align: center;
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+
+/* =============== RESPONSIVE =============== */
+
+@media (max-width: 992px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 36px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* Main Wrapper */
+    .main-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 34px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* Main Wrapper */
+    .main-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* =============== MAIN CONTENT TOPBAR SECTION =============== */
+
+    .mainbar .topbar {
+        width: 100%;
+        padding: 8% 5%;
+    }
+
+    .mainbar .topbar h2 {
+        font-size: 30px;
+    }
+
+    .mainbar .topbar p {
+        font-size: 16px;
+    }
+
+    /* =============== CONTENT SECTION =============== */
+
+    .mainbar .content {
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* Main Wrapper */
+    .main-wrapper {
+        max-width: 100%;
+    }
+}
